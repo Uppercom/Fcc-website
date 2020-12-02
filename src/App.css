@@ -28,13 +28,17 @@ body{
   align-items: center;
 }
 
+.l__wrapper, .l__wrapper--wide {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .l__wrapper {
   max-width: 1200px;
 }
 
-.l__wrapper, .l__wrapper--wide {
-  width: 90%;
-  margin: 0 auto;
+.l__row--v-stretch {
+  align-items: stretch;
 }
 
 .text--body {
@@ -86,19 +90,167 @@ body{
   margin-right: 50px;
 }
 
+.l__col--top {
+  justify-content: flex-start;
+}
+
+.card {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+  text-decoration: none;
+}
+
+.card__background {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.card--large {
+  color: #fff;
+  flex: 2;
+  margin: 0;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.card--no-gradient .background-container:after, .card--no-gradient .background-container:before, .card--no-gradient .background-container:hover:after, .card--no-gradient .background-container:hover:before, .card--no-gradient:after, .card--no-gradient:before, .card--no-gradient:hover:after, .card--no-gradient:hover:before {
+  opacity: 0!important;
+}
+
+.card--large:after, .card--large:before {
+  content: "gradient";
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999rem;
+  font-size: 0;
+  line-height: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity .45s;
+}
+
+.card--large:before {
+  background: linear-gradient(20deg,rgba(0,0,0,.4),transparent);
+  opacity: 1;
+}
+
+.card--large:after {
+  background: linear-gradient(20deg,rgba(0,0,0,.1),rgba(0,0,0,.3));
+  opacity: 0;
+}
+
+.card--large .background {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card--large .background .content {
+  z-index: 1;
+}
+
+.btn--no-border {
+  border-color: #fff;
+}
+
+.card--large-secondary {
+  color: #fff;
+  flex-basis: auto;
+  flex-grow: 2;
+  margin: 0;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+
+.card--large-secondary:before {
+  background: linear-gradient(20deg,rgba(0,0,0,.4),transparent);
+  opacity: 1;
+}
+
+.card--large-secondary:after, .card--large-secondary:before {
+  content: "gradient";
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999rem;
+  font-size: 0;
+  line-height: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity .45s;
+}
+
+.card--large-secondary:after {
+  background: linear-gradient(20deg,rgba(0,0,0,.1),rgba(0,0,0,.3));
+  opacity: 0;
+}
+
+.card--large-secondary .background {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card--large-secondary .background .content {
+  z-index: 1;
+}
+
+.topstory-side .content {
+  max-width: 90%;
+}
+
 .l__col {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.l__col--top {
-  justify-content: flex-start;
+.l__col--bottom{
+  justify-content: flex-end;
 }
+
+.space--30 {
+  padding: 30px;
+}
+
+.topstory-side {
+  flex: 1;
+  height: 370px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text--white {
+  color: #fff;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--large {
+  font-size: 34px;
+  letter-spacing: -.5px;
+  line-height: 38px;
+}
+
 
 .b__nudge--bottom {
   margin-bottom: 20px;
 }
+
 
 label {
   font-size: 14px;
@@ -108,12 +260,63 @@ label {
 
 @media (max-width: 1000px){
   .l__hide--on-tablet {
-      display: none;
+    display: none;
+  }
+  .card--large {
+    color: #000;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .card--large .background-container {
+    border: 0;
+  }
+
+  .card--large .background {
+    height: 450px;
+  }
+
+  .l__tablet--col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
   }
 }
 
 @media (min-width: 1001px){
   .l__hide--on-desktop {
       display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .card--large .background {
+    height: 350px;
+  }
+}
+
+@media (max-width: 750px){
+  .card--large .background {
+    height: 300px;
+  }
+}
+
+@media (max-width: 650px){
+  .text--large {
+    font-size: 28px;
+    line-height: 1.2em;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 550px){
+  .card--large .background {
+      height: 250px;
+  }
+}
+
+@media (max-width: 450px){
+  .card--large .background {
+      height: 200px;
   }
 }

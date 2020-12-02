@@ -175,7 +175,7 @@ a:hover, a:hover path, a:hover polygon {
 }
 
 .em-nav-mobile {
-    /* display: none; */
+    display: none;
     width: 100%;
     background: #fff;
 }
@@ -183,10 +183,10 @@ a:hover, a:hover path, a:hover polygon {
 .nav-mobile--menu {
     clear: both;
     height: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     float: left;
     width: 100%;
-    /* opacity: 0; */
+    opacity: 0;
     transition: all .3s ease;
 }
 

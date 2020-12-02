@@ -161,7 +161,7 @@ export default class menu extends Component {
                         </li>
                     </ul>
                     <div className="nav-mobile">
-                        <input checked type="checkbox" id="nav-menu"/>
+                        <input type="checkbox" id="nav-menu"/>
                         <label htmlFor="nav-menu">Menu de navigation</label>
                         <div className="nav-mobile--menu em-nav em-nav-mobile l__col l__col--top">
                             <div class="em-nav-mobile__adherent-profile">
@@ -183,53 +183,45 @@ export default class menu extends Component {
                                 <div class="space--20 b__nudge--bottom">
                                     <div class="em-nav__menu em-nav__menu--mobile">
                                         <div class="b__nudge--bottom">
-                                            <span class="head">Le Mouvement</span>
+                                            <span class="head">La plateforme</span>
                                             <ul class="items">
                                                 <li><a href="/le-mouvement">Qui sommes-nous ?</a></li>
                                                 <li><a href="/le-mouvement/notre-organisation">Notre organisation</a></li>
                                                 <li><a href="/le-mouvement/fonctionnement">Notre fonctionnement</a></li>
-                                                <li><a href="/le-mouvement/nos-referents">Nos référents</a></li>
-                                                <li><a href="https://dpt.en-marche.fr" target="_blank" rel="noopener noreferrer">Nos sites départementaux</a></li>
-                                                <li><a href="//legislatives.en-marche.fr/" target="_blank" rel="noopener noreferrer">Nos députés</a></li>
-                                                <li><a href="/nos-senateurs">Nos sénateurs</a></li>
+                                                <li><a href="#">Nos députés</a></li>
+                                                <li><a href="#">Nos sénateurs</a></li>
+                                                <li><a href="#">Nos élus locaux</a></li>
                                             </ul>
                                         </div>
                                         <div class="b__nudge--bottom">
                                             <span class="head">Actualités</span>
                                             <ul class="items">
-                                                <li><a href="/infocovid">InfoCovid</a></li>
-                                                <li><a href="/articles">Toutes nos actualités</a></li>
+                                                <li><a href="#">Nos activités</a></li>
+                                                <li><a href="#">InfoCovid</a></li>
+                                                <li><a href="#">Toutes nos actualités</a></li>
                                             </ul>
                                         </div>
                                         <div class="b__nudge--bottom">
                                             <span class="head">Élections</span>
                                             <ul class="items">
-                                                <li><a href="/municipales">Municipales 2020</a></li>
-                                                <li><a href="/consulaires2020">Consulaires 2020</a></li>
+                                                <li><a href="/municipales">Élections 2023</a></li>
                                             </ul>
                                         </div>
                                         <div class="b__nudge--bottom">
                                             <span class="head">S'engager</span>
                                             <ul class="items">
-                                                <li><a href="/evenements">Événements</a></li>
-                                                <li><a href="/comites">Comités</a></li>
-                                                <li><a href="/projets-citoyens">Projets citoyens</a></li>
-                                                                    <li><a href="/atelier-des-idees">Atelier des idées</a></li>
-                                                <li><a href="https://mooc.en-marche.fr" target="_blank" rel="noopener noreferrer">Formation</a></li>
-                                                <li><a href="https://mooc.en-marche.fr/sengager-a-la-republique-en-marche" target="_blank" rel="noopener noreferrer">S'engager à LaREM</a></li>
-                                                <li><a href="/le-mouvement/devenez-benevole">Devenez bénévole</a></li>
-                                                <li><a href="/don">Faire un don</a></li>
+                                                <li><a href="#">Événements</a></li>
+                                                <li><a href="#">Comités</a></li>
+                                                <li><a href="#">Partis politques</a></li>
+                                                <li><a href="#">Projets citoyens</a></li>
                                             </ul>
                                         </div>
                                         <div class="b__nudge--bottom">
                                             <span class="head">Nos idées</span>
                                             <ul class="items">
-                                                <li><a href="/notre-projet">Notre projet</a></li>
-                                                <li><a href="/nos-resultats">Nos résultats concrets</a></li>
-                                                <li><a href="/conferences-debats">Les conférences-débats</a></li>
-                                                <li><a href="/publications">Les publications</a></li>
-                                                <li><a href="/vos-contributions">Vos contributions</a></li>
-                                                <li><a href="/apres-la-crise">Après la crise</a></li>
+                                                <li><a href="#">Notre projet</a></li>
+                                                <li><a href="#">Nos résultats concrets</a></li>
+                                                <li><a href="#">Nos publications</a></li>
                                             </ul>
                                         </div>
                                     </div>
