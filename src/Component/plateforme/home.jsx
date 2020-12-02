@@ -34,7 +34,47 @@ export default class home extends Component {
                             </a>
                         </div>
 
-                        <div></div>
+                        <div class="content b__nudge--top">
+                            <article class="l__row l__row--v-stretch l__tablet--col">
+                                <div class="action action__home pink">
+                                    <p class="white">Je participe à un événement</p>
+                                    <a href="/evenements" class="white">
+                                        Voir la carte
+                                    </a>
+                                </div>
+                                <div class="action action__home blue">
+                                    <p class="white">Je rejoins un comité local</p>
+                                    <a href="https://en-marche.fr/comites" class="white" target="_blank" rel="noreferrer noopener">
+                                        J'y vais !
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <ul class="list__links list__links--row list__links--no-decor list__links--svgs l__hide--on-mobile space--35-15">
+                            <li class="head">NOUS SUIVRE SUR LES RÉSEAUX SOCIAUX </li>
+                            <li>
+                                <a href="https://www.facebook.com/EnMarche" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/enmarchefr" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/enmarchefr/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCJw8np695wqWOaKVhFjkRyg" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        
                     </section>
                 </main>
             </div>

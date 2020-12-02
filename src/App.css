@@ -225,6 +225,23 @@ body{
   padding: 30px;
 }
 
+.space--35-15 {
+  padding: 35px 0 15px;
+}
+
+.list__links .head {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.list__links--svgs li {
+  padding-right: 20px;
+}
+
+.list__links--svgs li .fab {
+  font-size: 38px;
+}
+
 .topstory-side {
   flex: 1;
   height: 370px;
@@ -258,6 +275,72 @@ label {
   margin-bottom: 2px;
 }
 
+.b__nudge--top {
+  margin-top: 20px;
+}
+
+.content article {
+  letter-spacing: .3px;
+  line-height: 1.62;
+}
+
+.content article .action__home {
+  flex: 1;
+  margin: 0 0 20px;
+}
+
+.content article .action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  background: #CD2726;
+  margin: 20px 0;
+}
+
+.content article .action p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 20px 0 0;
+  max-width: 350px;
+}
+
+.content article .action a {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 7px 15px;
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  transition: all .45s;
+  box-sizing: border-box;
+  font-family: Gillsans,Roboto,Helvetica,sans-serif;
+  border-radius: 0;
+  font-weight: 400;
+  line-height: 24px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  white-space: nowrap;
+}
+
+.content article .action a:hover {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.content article .action.blue {
+  background: #003366;
+}
+
 @media (max-width: 1000px){
   .l__hide--on-tablet {
     display: none;
@@ -280,6 +363,9 @@ label {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+  }
+  .content article .action__home {
+    margin: 0;
   }
 }
 
@@ -306,6 +392,22 @@ label {
     font-size: 28px;
     line-height: 1.2em;
     font-size: 24px;
+  }
+
+  .content article .action {
+    flex-direction: column;
+  }
+
+
+  .content article .action p {
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0 0 20px;
+    max-width: 100%;
+  }
+
+  .l__hide--on-mobile {
+    display: none !important;
   }
 }
 
