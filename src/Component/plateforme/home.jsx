@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Menu from '../../Parts/menu/menu.jsx' 
 import covidImage from '../../Images/info-coronavirus-bleu.jpeg'
 import president from '../../Images/5eb588db7b50a67d2e343f95.webp'
+import info1 from '../../Images/elisabeth-borne-afp.jpeg'
+import desintox from '../../Images/DESINTOX2020.jpeg'
+import actu from '../../Images/nos-actualites-visuel.jpeg'
 export default class home extends Component {
     render() {
         return (
@@ -75,6 +78,219 @@ export default class home extends Component {
                             </li>
                         </ul>
                         
+                    </section>
+
+                    <section className="l__wrapper b__nudge--bottom-larger">
+                        <ul className="l__row l__row--wrap l__row--top space--20-0 l__row--h-stretch-around l__mobile--col">
+                            <li className="card card--1 card--1--article l__col--bottom">
+                                <div className="cs card--small ">
+                                    <a href="#" className="background-container">
+                                        <div style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
+
+                                        </div>
+                                    </a>
+                                    <a href="#" className="headline link--no-decor">
+                                        <h2>Revenu minimum, garantie jeunes…Des aides renforcées pour les Français</h2>
+                                    </a>
+                                    <div className="share">
+                                        Partagez
+                                        <span role="button">
+                                            <i className="fab fa-facebook-square"></i>
+                                        </span>
+                                        <span role="button">
+                                            <i className="fab fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="cm card--medium">
+                                    <a href="#" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                        <div className="background">
+                                            <div class="content">
+                                                <h2 class="headline link--no-decor b__nudge--bottom-medium">
+                                                    Revenu minimum, garantie jeunes…Des aides renforcées pour les Français
+                                                </h2>
+                                                <div class="btn btn--no-border">Cliquez ici</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li className="card card--2 card--2--article l__col--bottom">
+                                <div className="cs card--small ">
+                                    <a href="#" className="background-container">
+                                        <div style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
+
+                                        </div>
+                                    </a>
+                                    <a href="#" className="headline link--no-decor">
+                                        <h2>1 an après le Grenelle, des avancées majeures !</h2>
+                                    </a>
+                                    <div className="share">
+                                        Partagez
+                                        <span role="button">
+                                            <i className="fab fa-facebook-square"></i>
+                                        </span>
+                                        <span role="button">
+                                            <i className="fab fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="cm card--medium">
+                                    <a href="#" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                        <div className="background">
+                                            <div class="content">
+                                                <h2 class="headline link--no-decor b__nudge--bottom-medium">
+                                                    1 an après le Grenelle, des avancées majeures !
+                                                </h2>
+                                                <div class="btn btn--no-border">Cliquez ici</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li className="card card--3 card--3--article l__col--bottom">
+                                <div className="cs card--small ">
+                                    <a href="#" className="background-container">
+                                        <div style={{backgroundImage: `url(${desintox})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
+
+                                        </div>
+                                    </a>
+                                    <a href="#" className="headline link--no-decor">
+                                        <h2>Décryptez les fake news !</h2>
+                                    </a>
+                                    <div className="share">
+                                        Partagez
+                                        <span role="button">
+                                            <i className="fab fa-facebook-square"></i>
+                                        </span>
+                                        <span role="button">
+                                            <i className="fab fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="cm card--medium">
+                                    <a href="#" style={{backgroundImage: `url(${desintox})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                        <div className="background">
+                                            <div class="content">
+                                                <h2 class="headline link--no-decor b__nudge--bottom-medium">
+                                                    Décryptez les fake news !
+                                                </h2>
+                                                <div class="btn btn--no-border">Cliquez ici</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li className="card card--4 card--4--article l__col--bottom">
+                                <div className="cs card--small ">
+                                    <a href="#" className="background-container">
+                                        <div style={{backgroundImage: `url(${actu})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
+
+                                        </div>
+                                    </a>
+                                    <a href="#" className="headline link--no-decor">
+                                        <h2>Retrouvez toute notre actu !</h2>
+                                    </a>
+                                    <div className="share">
+                                        Partagez
+                                        <span role="button">
+                                            <i className="fab fa-facebook-square"></i>
+                                        </span>
+                                        <span role="button">
+                                            <i className="fab fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="cm card--medium">
+                                    <a href="#" style={{backgroundImage: `url(${actu})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                        <div className="background">
+                                            <div class="content">
+                                                <h2 class="headline link--no-decor b__nudge--bottom-medium">
+                                                    Retrouvez toute notre actu !
+                                                </h2>
+                                                <div class="btn btn--no-border">Cliquez ici</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li className="card card--5 card--5--article l__col--bottom">
+                                <div className="cs card--small ">
+                                    <a href="#" className="background-container">
+                                        <div style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
+
+                                        </div>
+                                    </a>
+                                    <a href="#" className="headline link--no-decor">
+                                        <h2>Mieux protéger les Français et ceux qui les protègent</h2>
+                                    </a>
+                                    <div className="share">
+                                        Partagez
+                                        <span role="button">
+                                            <i className="fab fa-facebook-square"></i>
+                                        </span>
+                                        <span role="button">
+                                            <i className="fab fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="cm card--medium">
+                                    <a href="#" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                        <div className="background">
+                                            <div class="content">
+                                                <h2 class="headline link--no-decor b__nudge--bottom-medium">
+                                                    Mieux protéger les Français et ceux qui les protègent
+                                                </h2>
+                                                <div class="btn btn--no-border">Cliquez ici</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li className="card card--6 card--6--article l__col--bottom">
+                                <div className="cs card--small ">
+                                    <a href="#" className="background-container">
+                                        <div style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
+
+                                        </div>
+                                    </a>
+                                    <a href="#" className="headline link--no-decor">
+                                        <h2>Nous croyons au progrès, la 5G en est un !</h2>
+                                    </a>
+                                    <div className="share">
+                                        Partagez
+                                        <span role="button">
+                                            <i className="fab fa-facebook-square"></i>
+                                        </span>
+                                        <span role="button">
+                                            <i className="fab fa-twitter"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="cm card--medium">
+                                    <a href="#" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                        <div className="background">
+                                            <div class="content">
+                                                <h2 class="headline link--no-decor b__nudge--bottom-medium">
+                                                    Nous croyons au progrès, la 5G en est un !
+                                                </h2>
+                                                <div class="btn btn--no-border">Cliquez ici</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="l__row l__row--center b__nudge--bottom-large">
+                            <a href="#" class="btn">
+                                Plus d'actualités
+                            </a>
+                        </div>
                     </section>
                 </main>
             </div>
