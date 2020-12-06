@@ -9,7 +9,7 @@ function App() {
   return (
     <React.Fragment>
       <Switch>
-        <Route path="/about" component={About} />
+        <Route path="/plateforme/a-propos" component={About} />
         <Route path="/" component={Home} />
       </Switch>
     </React.Fragment>
