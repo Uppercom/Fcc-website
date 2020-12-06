@@ -627,6 +627,10 @@ a.link--no-decor {
   .bt_bb_size_large.bt_bb_headline h1, .bt_bb_size_large.bt_bb_headline h2, .bt_bb_size_large.bt_bb_headline h3, .bt_bb_size_large.bt_bb_headline h4, .bt_bb_size_large.bt_bb_headline h5, .bt_bb_size_large.bt_bb_headline h6{
     font-size: 1.4rem;
   }
+
+  .bt_bb_size_huge.bt_bb_headline h1, .bt_bb_size_huge.bt_bb_headline h2, .bt_bb_size_huge.bt_bb_headline h3, .bt_bb_size_huge.bt_bb_headline h4, .bt_bb_size_huge.bt_bb_headline h5, .bt_bb_size_huge.bt_bb_headline h6 {
+      font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 550px){
