@@ -472,6 +472,15 @@ a.link--no-decor {
   justify-content: center;
 }
 
+.bt_bb_section.bt_bb_color_scheme_10 {
+  color: #ffffff;
+  background-color: #00264a;
+}
+
+.bt_bb_section {
+  position: relative;
+}
+
 @media (max-width: 1100px){
   .card .card--small .background-container .background {
       height: 160px;
@@ -613,6 +622,10 @@ a.link--no-decor {
 
   .card .card--small .share {
       display: none;
+  }
+
+  .bt_bb_size_large.bt_bb_headline h1, .bt_bb_size_large.bt_bb_headline h2, .bt_bb_size_large.bt_bb_headline h3, .bt_bb_size_large.bt_bb_headline h4, .bt_bb_size_large.bt_bb_headline h5, .bt_bb_size_large.bt_bb_headline h6{
+    font-size: 1.4rem;
   }
 }
 
