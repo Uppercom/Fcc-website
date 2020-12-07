@@ -28,9 +28,6 @@ export default class menu extends Component {
                                         <a href="/plateforme/organisation">Notre organisation</a>
                                     </li>
                                     <li>
-                                        <a href="/plateforme/fonctionnement">Notre fonctionnement</a>
-                                    </li>
-                                    <li>
                                         <a href="/plateforme/deputes">Nos députés</a>
                                     </li>
                                     <li>
