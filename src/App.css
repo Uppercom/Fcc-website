@@ -505,7 +505,7 @@ a.link--no-decor {
   letter-spacing: 1.5px;
   transition: all .45s;
   box-sizing: border-box;
-  top: 126px;
+  top: 0;
 }
 
 .title-absolute{
@@ -675,7 +675,13 @@ a.link--no-decor {
   }
 
   .legislatives__trombi__item__status{
-    top: 90px;
+    top: 0;
+    padding: 14px 9px;
+    font-size: 11px;
+  }
+
+  .bt_bb_size_small.bt_bb_headline h1, .bt_bb_size_small.bt_bb_headline h2, .bt_bb_size_small.bt_bb_headline h3, .bt_bb_size_small.bt_bb_headline h4, .bt_bb_size_small.bt_bb_headline h5, .bt_bb_size_small.bt_bb_headline h6 {
+    font-size: .9rem;
   }
 }
 

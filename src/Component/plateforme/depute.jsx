@@ -48,7 +48,7 @@ export default class depute extends Component {
                                                 </div>
                                                 <div data-structure="3-3-3-3" className="bt_bb_row bt_bb_column_gap_15 bt_bb_border_visible">
                                                     <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
+                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
                                                                     <span>
@@ -72,7 +72,7 @@ export default class depute extends Component {
                                                     </div>
 
                                                     <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
+                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
                                                                     <span>
@@ -96,7 +96,7 @@ export default class depute extends Component {
                                                     </div>
 
                                                     <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
+                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
                                                                     <span>
@@ -121,7 +121,7 @@ export default class depute extends Component {
                                                     </div>
 
                                                     <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
+                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
                                                                         <span class="legislatives__trombi__item__status legislatives__trombi__item__status--won">Élu(e)</span>
