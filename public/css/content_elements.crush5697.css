@@ -366,6 +366,7 @@
 .bt_bb_wrapper {
     overflow: hidden;
     position: relative;
+    width: 100%;
     }
 .bt_bb_section {
     position: relative;
