@@ -8,7 +8,7 @@ import actu from '../../Images/nos-actualites-visuel.jpeg'
 import { Link } from 'react-router-dom'
 
 
-export default class newsListe extends Component {
+export default class newsCategory extends Component {
     render() {
         return (
             <div>
@@ -26,7 +26,7 @@ export default class newsListe extends Component {
                                                         <div className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_separator bt_bb_top_spacing_large bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_size_extralarge bt_bb_superheadline"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Toute l'actualités</span></span></h1></header>
+                                                                <header class="bt_bb_headline bt_bb_size_extralarge bt_bb_superheadline"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Santé</span></span></h1></header>
                                                                 <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
                                                             </div>
                                                         </div>
@@ -46,12 +46,12 @@ export default class newsListe extends Component {
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_masonry_post_grid bt_bb_grid_container bt_bb_columns_3 bt_bb_gap_normal" data-columns="3">
                                                                     <div class="bt_bb_post_grid_filter">
-                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item active" data-category="">
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="">
                                                                             <Link to="/actualites/liste">
                                                                                 Toute
                                                                             </Link>
                                                                         </span>
-                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item active" data-category="achievement">
                                                                             <Link to="/actualites/2/sante">
                                                                                 Santé
                                                                             </Link>

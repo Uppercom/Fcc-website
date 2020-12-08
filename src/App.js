@@ -8,6 +8,7 @@ import Depute from '../src/Component/plateforme/depute.jsx'
 import Elus from '../src/Component/plateforme/elus.jsx'
 import Senateurs from '../src/Component/plateforme/senateurs.jsx'
 import newsListe from '../src/Component/news/liste.jsx'
+import newsCategory from '../src/Component/news/category.jsx'
 import Home from '../src/Component/plateforme/home.jsx'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/plateforme/elus-locaux" component={Elus} />
         <Route path="/plateforme/senateurs" component={Senateurs} />
         <Route path="/actualites/liste" component={newsListe} />
+        <Route path="/actualites/:id/:name" component={newsCategory} />
         <Route path="/" component={Home} />
       </Switch>
     </React.Fragment>

@@ -519,6 +519,7 @@ a.link--no-decor {
 
 .btContent.actu a{
   color: initial;
+  border-bottom: none;
 }
 
 @media (max-width: 1100px){
