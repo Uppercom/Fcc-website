@@ -63,20 +63,6 @@ export default class menu extends Component {
                         <div className="l__row">
                             <div className="nav-dropdown">
                                 <p className="mb-0">
-                                    Elections
-                                    <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
-                                </p>
-                                <ul className="nav-dropdown__item">
-                                    <li>
-                                        <a href="/elections/elections-2023">Elections 2023</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="l__row">
-                            <div className="nav-dropdown">
-                                <p className="mb-0">
                                     S'engager
                                     <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
                                 </p>
