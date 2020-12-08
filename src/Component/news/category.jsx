@@ -68,14 +68,14 @@ export default class newsCategory extends Component {
                                                                     <ul className="l__row l__row--wrap l__row--top space--20-0 l__row--h-stretch-around l__mobile--col">
                                                                         <li className="card card--1 card--1--article l__col--bottom">
                                                                             <div className="cs card--small ">
-                                                                                <a href="#" className="background-container">
+                                                                                <Link to="/actualites/2" className="background-container">
                                                                                     <div style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
 
                                                                                     </div>
-                                                                                </a>
-                                                                                <a href="#" className="headline link--no-decor">
+                                                                                </Link>
+                                                                                <Link to="/actualites/2" className="headline link--no-decor">
                                                                                     <h2>Revenu minimum, garantie jeunes…Des aides renforcées pour les Français</h2>
-                                                                                </a>
+                                                                                </Link>
                                                                                 <div className="share">
                                                                                     Partagez
                                                                                     <span role="button">
@@ -87,7 +87,7 @@ export default class newsCategory extends Component {
                                                                                 </div>
                                                                             </div>
                                                                             <div className="cm card--medium">
-                                                                                <a href="#" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                                                                <Link to="/actualites/2" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
                                                                                     <div className="background">
                                                                                         <div class="content">
                                                                                             <h2 class="headline link--no-decor b__nudge--bottom-medium">
@@ -96,20 +96,20 @@ export default class newsCategory extends Component {
                                                                                             <div class="btn btn--no-border">Cliquez ici</div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </a>
+                                                                                </Link>
                                                                             </div>
                                                                         </li>
 
                                                                         <li className="card card--2 card--2--article l__col--bottom">
                                                                             <div className="cs card--small ">
-                                                                                <a href="#" className="background-container">
+                                                                                <Link to="/actualites/2" className="background-container">
                                                                                     <div style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
 
                                                                                     </div>
-                                                                                </a>
-                                                                                <a href="#" className="headline link--no-decor">
+                                                                                </Link>
+                                                                                <Link to="/actualites/2" className="headline link--no-decor">
                                                                                     <h2>1 an après le Grenelle, des avancées majeures !</h2>
-                                                                                </a>
+                                                                                </Link>
                                                                                 <div className="share">
                                                                                     Partagez
                                                                                     <span role="button">
@@ -121,7 +121,7 @@ export default class newsCategory extends Component {
                                                                                 </div>
                                                                             </div>
                                                                             <div className="cm card--medium">
-                                                                                <a href="#" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                                                                <Link to="/actualites/2" style={{backgroundImage: `url(${info1})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
                                                                                     <div className="background">
                                                                                         <div class="content">
                                                                                             <h2 class="headline link--no-decor b__nudge--bottom-medium">
@@ -130,7 +130,7 @@ export default class newsCategory extends Component {
                                                                                             <div class="btn btn--no-border">Cliquez ici</div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </a>
+                                                                                </Link>
                                                                             </div>
                                                                         </li>
 

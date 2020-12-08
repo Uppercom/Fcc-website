@@ -718,14 +718,14 @@ blockquote {
     color: #cf1a45;
     }
 blockquote:before {
-    content: '\f10e';
+    /* content: '\f10e';
     font-family: FontAwesome;
     display: block;
     font-size: 2rem;
     line-height: 1;
     position: absolute;
     top: 3.2rem;
-    left: 0;
+    left: 0; */
     }
 .rtl blockquote:before {
     left: auto;

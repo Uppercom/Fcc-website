@@ -9,6 +9,7 @@ import Elus from '../src/Component/plateforme/elus.jsx'
 import Senateurs from '../src/Component/plateforme/senateurs.jsx'
 import newsListe from '../src/Component/news/liste.jsx'
 import newsCategory from '../src/Component/news/category.jsx'
+import newsDetails from '../src/Component/news/details.jsx'
 import Home from '../src/Component/plateforme/home.jsx'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/plateforme/senateurs" component={Senateurs} />
         <Route path="/actualites/liste" component={newsListe} />
         <Route path="/actualites/:id/:name" component={newsCategory} />
+        <Route path="/actualites/:id" component={newsDetails} />
         <Route path="/" component={Home} />
       </Switch>
     </React.Fragment>

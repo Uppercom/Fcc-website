@@ -1,0 +1,33 @@
+.bt_bb_icon .bt_bb_icon_holder i{
+    color: #fff !important;
+    line-height: 2em;
+    font-size: 1rem;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.btIcoFacebook .bt_bb_icon_holder i{
+    -webkit-box-shadow: 0 0 0 3em #3b5998 inset;
+    box-shadow: 0 0 0 3em #3b5998 inset;
+}
+
+.btIcoTwitter .bt_bb_icon_holder i{
+    -webkit-box-shadow: 0 0 0 3em #1da1f2 inset;
+    box-shadow: 0 0 0 3em #1da1f2 inset;
+}
+
+.btIcoInstagram .bt_bb_icon_holder i{
+    -webkit-box-shadow: 0 0 0 3em #DD2A7B inset;
+    box-shadow: 0 0 0 3em #DD2A7B inset;
+}
+
+.bt_bb_icon .bt_bb_icon_holder i:before{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.btShareColumn{
+    text-align: right;
+}
