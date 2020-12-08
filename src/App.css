@@ -517,6 +517,10 @@ a.link--no-decor {
   margin-top: -6em;
 }
 
+.btContent.actu a{
+  color: initial;
+}
+
 @media (max-width: 1100px){
   .card .card--small .background-container .background {
       height: 160px;

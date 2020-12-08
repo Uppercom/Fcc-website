@@ -10130,7 +10130,7 @@ section.bt_bb_negative_margin_extralarge {
     font-family: "Work Sans",Arial,Helvetica,sans-serif;
     padding: 1.5em;
     margin: 0;
-    border-bottom: 2px solid rgba(0,0,0,.3);
+    border-bottom: 1px solid rgba(0,0,0,.3);
     opacity: .35;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
