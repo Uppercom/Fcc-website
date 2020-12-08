@@ -16,7 +16,7 @@ export default class menu extends Component {
                         </li>
                         <div className="l__row">
                             <div className="nav-dropdown">
-                                <p>
+                                <p className="mb-0">
                                     La plateforme
                                     <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
                                 </p>
@@ -42,7 +42,7 @@ export default class menu extends Component {
 
                         <div className="l__row">
                             <div className="nav-dropdown">
-                                <p>
+                                <p className="mb-0">
                                     Actualités
                                     <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
                                 </p>
@@ -62,7 +62,7 @@ export default class menu extends Component {
 
                         <div className="l__row">
                             <div className="nav-dropdown">
-                                <p>
+                                <p className="mb-0">
                                     Elections
                                     <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
                                 </p>
@@ -76,7 +76,7 @@ export default class menu extends Component {
 
                         <div className="l__row">
                             <div className="nav-dropdown">
-                                <p>
+                                <p className="mb-0">
                                     S'engager
                                     <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
                                 </p>
@@ -99,7 +99,7 @@ export default class menu extends Component {
 
                         <div className="l__row">
                             <div className="nav-dropdown">
-                                <p>
+                                <p className="mb-0">
                                     Nos idées
                                     <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
                                 </p>

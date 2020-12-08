@@ -508,6 +508,10 @@ a.link--no-decor {
   top: 0;
 }
 
+.mb-0{
+  margin-bottom: 0 !important;
+}
+
 .title-absolute{
   position: absolute;
   margin-top: -6em;
