@@ -15,7 +15,7 @@ export default class Newsdetails extends Component {
             <div className="btPageWrap">
                 <Menu />
                 <div className="btContentWrap btClear">
-                    <div className="btContentHolder">
+                    <div className="btContentPost">
                         <div className="btContent actu">
                             <div className="bt_bb_wrapper">
                                 <article className="btPostSingleItemStandard gutter post-1520 post type-post status-publish format-standard has-post-thumbnail hentry category-press tag-standard">

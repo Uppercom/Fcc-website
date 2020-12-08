@@ -522,7 +522,7 @@ a.link--no-decor {
   border-bottom: none;
 }
 
-.btContentHolder {
+.btContentPost {
   max-width: 1000px;
   margin: auto;
   padding: 4em 30px 4em;
@@ -702,7 +702,7 @@ a.link--no-decor {
     font-size: .9rem;
   }
 
-  .btContentHolder{
+  .btContentPost{
     width: 100%;
     padding: 0;
   }
