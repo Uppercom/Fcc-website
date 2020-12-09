@@ -48,13 +48,13 @@ export default class menu extends Component {
                                 </p>
                                 <ul className="nav-dropdown__item">
                                     <li>
-                                        <a href="/plateforme/a-propos">Nos activités</a>
+                                        <a href="#">Nos activités</a>
                                     </li>
                                     <li>
-                                        <a href="/plateforme/organisation">InfoCovid</a>
+                                        <a href="#">InfoCovid</a>
                                     </li>
                                     <li>
-                                        <a href="/plateforme/fonctionnement">Toutes nos actualités</a>
+                                        <a href="/actualites/liste">Toutes nos actualités</a>
                                     </li>
                                 </ul>
                             </div>

@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import API from '../../Helpers/config.js'
+import axios from 'axios'
+import Skeleton from 'react-loading-skeleton'
 import Menu from '../../Parts/menu/menu.jsx' 
 import Footer from '../../Parts/footer.jsx' 
 import covidImage from '../../Images/info-coronavirus-bleu.jpeg'
@@ -10,7 +13,53 @@ import Logo from '../../Images/4.png'
 import flag from '../../Images/flag.png'
 
 export default class home extends Component {
+    constructor(){
+        super()
+        this.state = {
+            articles : {
+                datas: [],
+                flag: false,
+                isLoading: false,
+                message: null
+            }
+        }
+    }
+
+    getArticles() {
+        this.setState({ articles : {isLoading : true}})
+        axios
+            .get(`${API}/api/admin/news/4`)
+            .then(
+                (res) => {
+                    if (res.data.state) {
+                        this.setState({
+                            articles : {
+                                flag: true,
+                                isLoading: false,
+                                datas : res.data.datas,
+                                message: res.data.message
+                            },
+                        })
+                    } else {
+                        this.setState({
+                            articles : {
+                                flag: true,
+                                isLoading: false,
+                                datas : [],
+                                message: res.data.message
+                            },
+                        })
+                    }
+                }
+            )
+    }
+
+    componentDidMount() {
+        this.getArticles()
+    }
     render() {
+        var { articles } = this.state
+        console.log(articles);
         return (
             <div>
                 <Menu />
