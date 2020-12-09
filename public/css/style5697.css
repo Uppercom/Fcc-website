@@ -4158,8 +4158,8 @@ body.single.rtl .btPostSingleItemStandard .btShareColumn {
     }
 .btMediaBox img {
     display: block;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     }
 .btMediaBox > a > img {
     -webkit-transform: scale3d(1,1,1);
