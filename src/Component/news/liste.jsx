@@ -6,9 +6,6 @@ import Skeleton from 'react-loading-skeleton'
 import Menu from '../../Parts/menu/menu.jsx' 
 import Banner from '../../Images/news.jpg' 
 import Footer from '../../Parts/footer.jsx'
-import info1 from '../../Images/elisabeth-borne-afp.jpeg'
-import desintox from '../../Images/DESINTOX2020.jpeg'
-import actu from '../../Images/nos-actualites-visuel.jpeg'
 import { Link } from 'react-router-dom'
 
 
@@ -63,7 +60,6 @@ export default class newsListe extends Component {
 
     render() {
         var { articles } = this.state
-        console.log(articles);
         return (
             <div>
                 <Menu />
@@ -105,14 +101,14 @@ export default class newsListe extends Component {
                                                                             articles.datas.map((item, key) =>
                                                                                 <li className="card card--2 card--2--article l__col--bottom">
                                                                                     <div className="cs card--small ">
-                                                                                        <a href="#" className="background-container">
+                                                                                        <Link to={`/actualites/${item._id}`} className="background-container">
                                                                                             <div style={{backgroundImage: `url(${item.cover})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
 
                                                                                             </div>
-                                                                                        </a>
-                                                                                        <a href="#" className="headline link--no-decor">
+                                                                                        </Link>
+                                                                                        <Link to={`/actualites/${item._id}`} className="headline link--no-decor">
                                                                                             <h2>{sliceText(item.title, 50)}</h2>
-                                                                                        </a>
+                                                                                        </Link>
                                                                                         <div className="share">
                                                                                             Partagez
                                                                                             <span role="button">
@@ -124,7 +120,7 @@ export default class newsListe extends Component {
                                                                                         </div>
                                                                                     </div>
                                                                                     <div className="cm card--medium">
-                                                                                        <a href="#" style={{backgroundImage: `url(${item.cover})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
+                                                                                        <Link to={`/actualites/${item._id}`} style={{backgroundImage: `url(${item.cover})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
                                                                                             <div className="background">
                                                                                                 <div class="content">
                                                                                                     <h2 class="headline link--no-decor b__nudge--bottom-medium">
@@ -133,7 +129,7 @@ export default class newsListe extends Component {
                                                                                                     <div class="btn btn--no-border">Cliquez ici</div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </a>
+                                                                                        </Link>
                                                                                     </div>
                                                                                 </li>
                                                                             )

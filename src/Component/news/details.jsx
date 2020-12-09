@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import API from '../../Helpers/config.js'
+import { sliceText } from '../../Helpers/functions.js'
+import axios from 'axios'
+import Skeleton from 'react-loading-skeleton'
 import Menu from '../../Parts/menu/menu.jsx' 
 import Banner from '../../Images/news.jpg' 
 import Footer from '../../Parts/footer.jsx'
@@ -10,7 +14,58 @@ import actu from '../../Images/nos-actualites-visuel.jpeg'
 import './post.css'
 
 export default class Newsdetails extends Component {
+    constructor() {
+        super()
+        this.state = {
+            articles : {
+                datas: null,
+                flag: false,
+                isLoading: false,
+                message: null,
+                no_datas: false
+            }
+        }
+    }
+
+    getDetails() {
+        var id = window.location.pathname.split("/")[2];
+        this.setState({ articles : {isLoading : true}})
+        axios
+            .get(`${API}/api/admin/news/details/${id}`)
+            .then(
+                (res) => {
+                    if (res.data.state) {
+                        this.setState({
+                            articles : {
+                                flag: true,
+                                isLoading: false,
+                                datas : res.data.datas,
+                                message: res.data.message,
+                                no_datas: false
+                            },
+                        })
+                    } else {
+                        this.setState({
+                            articles : {
+                                flag: true,
+                                isLoading: false,
+                                datas : [],
+                                message: res.data.message,
+                                no_datas: true
+                            },
+                        })
+                    }
+                }
+            )
+    }
+
+    componentDidMount() {
+        this.getDetails()
+    }
+
     render() {
+        var { articles } = this.state
+        console.log(articles);
         return (
             <div className="btPageWrap">
                 <Menu />

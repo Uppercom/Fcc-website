@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './menu.css'
 import Logo from '../../Images/3.png'
 import chevronDown from '../../Images/chevron-down-light-black.svg'
+import { Link } from 'react-router-dom'
 
 export default class menu extends Component {
     render() {
@@ -10,9 +11,9 @@ export default class menu extends Component {
                 <nav className="gtm__navigation__desktop l__wrapper l__row l__row--h-stretch l__hide--on-tablet space--20-0">
                     <ul className="list__links list__links--row list__links--nav list__links--no-decor">
                         <li>
-                            <a className="text--logo b__nudge--right-0" href="/">
+                            <Link className="text--logo b__nudge--right-0" to="/">
                                 FCC !
-                            </a>
+                            </Link>
                         </li>
                         <div className="l__row">
                             <div className="nav-dropdown">
@@ -22,19 +23,19 @@ export default class menu extends Component {
                                 </p>
                                 <ul className="nav-dropdown__item">
                                     <li>
-                                        <a href="/plateforme/a-propos">Qui sommes-nous ?</a>
+                                        <Link to="/plateforme/a-propos">Qui sommes-nous ?</Link>
                                     </li>
                                     <li>
-                                        <a href="/plateforme/organisation">Notre organisation</a>
+                                        <Link to="/plateforme/organisation">Notre organisation</Link>
                                     </li>
                                     <li>
-                                        <a href="/plateforme/deputes">Nos députés</a>
+                                        <Link to="/plateforme/deputes">Nos députés</Link>
                                     </li>
                                     <li>
-                                        <a href="/plateforme/senateurs">Nos sénateurs</a>
+                                        <Link to="/plateforme/senateurs">Nos sénateurs</Link>
                                     </li>
                                     <li>
-                                        <a href="/plateforme/elus-locaux">Nos élus locaux</a>
+                                        <Link to="/plateforme/elus-locaux">Nos élus locaux</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -51,10 +52,7 @@ export default class menu extends Component {
                                         <a href="#">Nos activités</a>
                                     </li>
                                     <li>
-                                        <a href="#">InfoCovid</a>
-                                    </li>
-                                    <li>
-                                        <a href="/actualites/liste">Toutes nos actualités</a>
+                                        <Link to="/actualites/liste">Toutes nos actualités</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -71,13 +69,7 @@ export default class menu extends Component {
                                         <a href="/s-engager/evenements">Évenements</a>
                                     </li>
                                     <li>
-                                        <a href="/s-engager/comites">Comités</a>
-                                    </li>
-                                    <li>
                                         <a href="/s-engager/parties-politiques">Parties politiques</a>
-                                    </li>
-                                    <li>
-                                        <a href="/s-engager/projets-citoyens">Projets citoyens</a>
                                     </li>
                                 </ul>
                             </div>
@@ -86,20 +78,10 @@ export default class menu extends Component {
                         <div className="l__row">
                             <div className="nav-dropdown">
                                 <p className="mb-0">
-                                    Nos idées
-                                    <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
+                                    <a href="#">
+                                        Nos documents
+                                    </a> 
                                 </p>
-                                <ul className="nav-dropdown__item">
-                                    <li>
-                                        <a href="/idees/projet">Notre projet</a>
-                                    </li>
-                                    <li>
-                                        <a href="/idees/resultats">Nos résultats concrets</a>
-                                    </li>
-                                    <li>
-                                        <a href="/idees/publications">Nos publications</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
 
