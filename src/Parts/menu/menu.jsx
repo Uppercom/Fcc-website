@@ -66,10 +66,10 @@ export default class menu extends Component {
                                 </p>
                                 <ul className="nav-dropdown__item">
                                     <li>
-                                        <a href="/s-engager/evenements">Évenements</a>
+                                        <Link to="/s-engager/evenements">Évenements</Link>
                                     </li>
                                     <li>
-                                        <a href="/s-engager/parties-politiques">Parties politiques</a>
+                                        <Link to="/s-engager/parties-politiques">Parties politiques</Link>
                                     </li>
                                 </ul>
                             </div>

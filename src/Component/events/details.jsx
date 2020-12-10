@@ -103,7 +103,7 @@ export default class eventDetails extends Component {
                                                                 <div class="bt_bb_text"><p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and bring to the table win-win survival strategies to ensure proactive domination.</p><p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
                                                             </div>
                                                             <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
-                                                            <a style={{color: '#fff'}} class="pull-right btn btn--red b__nudge--right-extra-large" href="/don">Je veux participer</a>
+                                                            <a style={{color: '#fff'}} class="btn btn--red b__nudge--right-extra-large" href="/don">Je veux participer</a>
                                                         </div>
                                                     </div></div>
                                                 </div>

@@ -7251,7 +7251,7 @@ html[data-useragent*="Edge"] .bt_bb_section.bt_bb_background_image {
 .bt_bb_size_large.bt_bb_headline h4,
 .bt_bb_size_large.bt_bb_headline h5,
 .bt_bb_size_large.bt_bb_headline h6 {
-    font-size: 3rem;
+    font-size: 34px;
     font-weight: 600;
     }
 .bt_bb_size_extralarge.bt_bb_headline h1,
