@@ -13,6 +13,7 @@ import newsDetails from '../src/Component/news/details.jsx'
 import eventsListe from '../src/Component/events/liste.jsx'
 import eventDetails from '../src/Component/events/details.jsx'
 import eventInscription from '../src/Component/events/inscription.jsx'
+import partiesListe from '../src/Component/parties/liste.jsx'
 import Home from '../src/Component/plateforme/home.jsx'
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
         <Route path="/s-engager/evenements/:id/inscription" component={eventInscription} />
         <Route path="/s-engager/evenements/:id" component={eventDetails} />
         <Route path="/s-engager/evenements" component={eventsListe} />
-        <Route path="/s-engager/parties-politiques" component={eventsListe} />
+        <Route path="/s-engager/parties-politiques" component={partiesListe} />
         <Route path="/" component={Home} />
       </Switch>
     </React.Fragment>
