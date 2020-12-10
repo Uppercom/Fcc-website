@@ -10864,9 +10864,9 @@ span.wpcf7-not-valid-tip {
 .bt_bb_single_event .bt_bb_single_event_content .bt_bb_single_event_date {
     padding-right: 1.5em;
     display: inline-block;
-    -webkit-flex: 1 0 5%;
-    -ms-flex: 1 0 5%;
-    flex: 1 0 5%;
+    -webkit-flex: .4 0 0%;
+    -ms-flex: .4 0 0%;
+    flex: .4 0 0%;
     font-family: "Work Sans",Arial,Helvetica,sans-serif;
     line-height: 1;
     }
@@ -10899,10 +10899,10 @@ span.wpcf7-not-valid-tip {
     clear: both;
     }
 .bt_bb_single_event .bt_bb_single_event_content .bt_bb_single_event_details .bt_bb_single_event_content_title {
-    font-size: 1.7rem;
+    font-size: 24px;
     line-height: 1;
     font-family: "Work Sans",Arial,Helvetica,sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: .5em;
     }
 .bt_bb_single_event .bt_bb_single_event_content .bt_bb_single_event_details .bt_bb_single_event_content_title a {
@@ -10947,6 +10947,7 @@ span.wpcf7-not-valid-tip {
 .bt_bb_single_event .bt_bb_single_event_content .bt_bb_single_event_date {
     display: block;
     padding: 0 0 1.5em;
+    margin-top: 0px !important;
     }
 .bt_bb_single_event .bt_bb_single_event_content .bt_bb_single_event_details {
     display: block;
