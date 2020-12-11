@@ -12,7 +12,6 @@ import desintox from '../../Images/DESINTOX2020.jpeg'
 import actu from '../../Images/nos-actualites-visuel.jpeg'
 
 import './post.css'
-import article from './article.jsx'
 
 export default class Newsdetails extends Component {
     constructor() {

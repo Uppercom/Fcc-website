@@ -14,6 +14,8 @@ import eventsListe from '../src/Component/events/liste.jsx'
 import eventDetails from '../src/Component/events/details.jsx'
 import eventInscription from '../src/Component/events/inscription.jsx'
 import partiesListe from '../src/Component/parties/liste.jsx'
+import detailsParties from '../src/Component/parties/details.jsx'
+import membresPartie from '../src/Component/parties/membres.jsx'
 import Home from '../src/Component/plateforme/home.jsx'
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
         <Route path="/s-engager/evenements/:id/inscription" component={eventInscription} />
         <Route path="/s-engager/evenements/:id" component={eventDetails} />
         <Route path="/s-engager/evenements" component={eventsListe} />
+        <Route path="/s-engager/parties-politiques/:id/membres" component={membresPartie} />
+        <Route path="/s-engager/parties-politiques/:id" component={detailsParties} />
         <Route path="/s-engager/parties-politiques" component={partiesListe} />
         <Route path="/" component={Home} />
       </Switch>

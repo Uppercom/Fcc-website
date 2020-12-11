@@ -61,26 +61,15 @@ export default class menu extends Component {
                         <div className="l__row">
                             <div className="nav-dropdown">
                                 <p className="mb-0">
-                                    S'engager
-                                    <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
+                                    <Link to="/s-engager/evenements">Évenements</Link>
                                 </p>
-                                <ul className="nav-dropdown__item">
-                                    <li>
-                                        <Link to="/s-engager/evenements">Évenements</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/s-engager/parties-politiques">Parties politiques</Link>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
 
                         <div className="l__row">
                             <div className="nav-dropdown">
                                 <p className="mb-0">
-                                    <a href="#">
-                                        Nos documents
-                                    </a> 
+                                    <Link to="/s-engager/parties-politiques">Parties politiques</Link>
                                 </p>
                             </div>
                         </div>
