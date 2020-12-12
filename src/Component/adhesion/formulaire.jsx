@@ -21,7 +21,7 @@ export default class formulaire extends Component {
                         <div className="b__nudge--bottom-small text--black text--larger">
                             <span>Adhérer</span>
                             <br/>
-                            <span>au Front Commun Pour Le Congo</span>
+                            <span>au front commun pour <br/> le Congo</span>
                         </div>
                         <p class="text--black text--body">
                             Vous voulez contribuer à la transformation En Marche ?
