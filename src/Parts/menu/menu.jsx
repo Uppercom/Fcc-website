@@ -100,7 +100,7 @@ export default class menu extends Component {
                     </ul>
                     <div className="l__row">
                         <div className="font-roboto b__nudge--right"></div>
-                        <a className="text--body b__nudge--right" href="/adhesion">Adhérer</a>
+                        <Link className="text--body b__nudge--right" to="/adhesion">Adhérer</Link>
                         <a className="btn btn--red" href="/don">Faire un don</a>
                     </div>
                 </nav>

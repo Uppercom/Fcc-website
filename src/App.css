@@ -382,6 +382,10 @@ label {
   justify-content: space-around;
 }
 
+.l__row--h-stretch {
+  justify-content: space-between;
+}
+
 .l__row--wrap {
   flex-wrap: wrap;
 }
@@ -540,6 +544,208 @@ a.link--no-decor {
 
 .wpcf7-list-item-label{
   font-weight: 600;
+}
+
+.join {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.join .progressive-background {
+  background-size: cover;
+}
+
+.join__desc {
+  width: 35%;
+  height: 100vh;
+  transition: all .5s;
+  position: relative;
+  background-color: #003366;
+}
+
+.join__desc h1 {
+  position: absolute;
+  margin: 30px;
+  z-index: 100;
+}
+
+.join__desc .desc__texts {
+  position: relative;
+  top: 60%;
+  transform: translateY(-60%);
+}
+
+.content article {
+  letter-spacing: .3px;
+  line-height: 1.62;
+}
+
+.l__wrapper--500 {
+  max-width: 500px;
+}
+
+.l__wrapper--500, .l__wrapper--600 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b__nudge--bottom-tiny {
+  margin-bottom: 5px;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.register__form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.register__form form {
+  width: 100%;
+}
+
+/* .join__desc .desc__texts span:first-child {
+  border-bottom: 10px solid #ffeb00;
+  box-shadow: inset 0 -5px 0 #ffeb00;
+} */
+
+.join__desc .desc__texts span {
+  font-size: 34px;
+  letter-spacing: -.5px;
+  line-height: 38px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0 10px;
+  height: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,.22);
+}
+
+.join__desc .desc__texts p {
+  max-width: 500px;
+  padding: 0 2em 2em;
+  font-size: 18px;
+  color: #fff;
+}
+
+.join__form {
+  width: 65%;
+  background-color: #fafafa;
+  height: auto;
+  overflow: scroll;
+  padding: 10% 0;
+}
+
+.join__form .register__form--mid {
+  width: 48%;
+}
+
+.join__form .register__form--full, .join__form .register__form--mid, .join__form .register__form--third {
+  margin: 10px 0;
+}
+
+.register__form--mid {
+  width: 49%;
+}
+
+.register__form--full, .register__form--mid, .register__form--third {
+  margin: 5px 0;
+}
+
+.join__form input.form-join, .join__form select {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  height: 60px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.join__form .form__captcha, .join__form .register__form--full {
+  width: 100%;
+}
+
+.join__form .register__form--full, .join__form .register__form--mid, .join__form .register__form--third {
+  margin: 10px 0;
+}
+
+.register__form--full input, .register__form--full select, .register__form--mid input, .register__form--mid select, .register__form--third input, .register__form--third select {
+  width: 100%;
+  margin: 0;
+}
+
+.join__form select#adherent_registration_birthdate_day, .join__form select#adherent_registration_birthdate_month, .join__form select#become_adherent_birthdate_day, .join__form select#become_adherent_birthdate_month {
+  width: 90%;
+  margin-right: 10px;
+}
+
+.join__form .btn {
+  border-radius: 3px;
+  max-width: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+button.btn {
+  display: inline-block;
+}
+
+.b__nudge--top {
+  margin-top: 20px;
+}
+
+.btn--green--apple {
+  background: #0cd283;
+  border-color: #0cd283;
+}
+
+.btn--large-and-medium {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 1.9px;
+  max-width: 300px;
+  width: 100%;
+  height: 75px;
+}
+.text--center {
+  text-align: center;
+}
+
+.text--larger {
+  font-size: 44px;
+  line-height: .93;
+  letter-spacing: -1.2px;
+}
+
+.text--black {
+  color: #000;
+}
+
+.space--60-0 {
+  padding: 60px 0;
+}
+
+.l__col--center {
+  align-items: center;
+}
+
+.l__wrapper--slim {
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b__nudge--bottom-small {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1100px){
