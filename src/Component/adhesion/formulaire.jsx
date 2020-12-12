@@ -25,7 +25,7 @@ export default class formulaire extends Component {
                         </div>
                         <p class="text--black text--body">
                             Vous voulez contribuer à la transformation En Marche ?
-                            Rejoignez les 421 137 adhérents du front commun pour le congo !<br />
+                            Rejoignez le front commun pour le congo !<br />
                             C'est facile, gratuit et 3 minutes suffiront.
                         </p>
                     </div>

@@ -748,6 +748,13 @@ button.btn {
   margin-bottom: 30px;
 }
 
+@media (min-width: 1440px){
+  .join__desc {
+      height: auto;
+      width: 50%;
+  }
+}
+
 @media (max-width: 1100px){
   .card .card--small .background-container .background {
       height: 160px;
@@ -792,6 +799,37 @@ button.btn {
   .card--1--article .cm, .card--1--article .cmv, .card--1--article .csv, .card--2--article .cm, .card--2--article .cmv, .card--2--article .csv, .card--3--article .cm, .card--3--article .cmv, .card--3--article .csv, .card--4--article .cm, .card--4--article .cmv, .card--4--article .csv, .card--5--article .cm, .card--5--article .cmv, .card--5--article .csv, .card--6--article .cm, .card--6--article .cmv, .card--6--article .csv {
     display: none;
   }
+
+  .join__desc {
+    height: auto;
+    width: 100%;
+  }
+
+  .join__desc h1{
+    margin: -20px 18px;
+  }
+
+  .join {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .join__form {
+    width: 100%;
+    overflow: hidden;
+    padding: 5% 0;
+  }
+
+  .join__desc .desc__texts {
+    top: 80px;
+    transform: translateY(0);
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .join__desc .desc__texts span {
+    height: 25px;
+  }
 }
 
 @media (min-width: 1001px){
@@ -825,10 +863,32 @@ button.btn {
     font-size: 24px;
   }
 
+  .l__mobile--col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .join__form .register__form--mid {
+    width: 100%;
+  }
+
   .content article .action {
     flex-direction: column;
   }
 
+  .join__desc .desc__texts span {
+    font-size: 28px;
+    line-height: 1.2em;
+  }
+
+  .text--larger {
+    font-size: 28px;
+    letter-spacing: -.6px;
+    line-height: 32px;
+    font-size: 34px;
+    letter-spacing: -.5px;
+    line-height: 38px;
+  }
 
   .content article .action p {
     font-size: 20px;
