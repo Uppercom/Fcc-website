@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './menu.css'
-import Logo from '../../Images/3.png'
+import Logo from '../../Images/9.png'
 import chevronDown from '../../Images/chevron-down-light-black.svg'
 import { Link } from 'react-router-dom'
 
@@ -12,7 +12,7 @@ export default class menu extends Component {
                     <ul className="list__links list__links--row list__links--nav list__links--no-decor">
                         <li>
                             <Link className="text--logo b__nudge--right-0" to="/">
-                                FCC !
+                                <img width="194px" src={Logo} alt="" srcset=""/>
                             </Link>
                         </li>
                         <div className="l__row">
@@ -101,7 +101,7 @@ export default class menu extends Component {
                     <div className="l__row">
                         <div className="font-roboto b__nudge--right"></div>
                         <Link className="text--body b__nudge--right" to="/adhesion">Adhérer</Link>
-                        <a className="btn btn--red" href="/don">Faire un don</a>
+                        <Link className="btn btn--red" to="/don">Faire un don</Link>
                     </div>
                 </nav>
 

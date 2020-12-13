@@ -108,22 +108,22 @@ export default class home extends Component {
                         <ul class="list__links list__links--row list__links--no-decor list__links--svgs l__hide--on-mobile space--35-15">
                             <li class="head">NOUS SUIVRE SUR LES RÉSEAUX SOCIAUX </li>
                             <li>
-                                <a href="https://www.facebook.com/EnMarche" target="_blank" rel="noopener noreferrer">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-facebook-square"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/enmarchefr" target="_blank" rel="noopener noreferrer">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/enmarchefr/" target="_blank" rel="noopener noreferrer">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCJw8np695wqWOaKVhFjkRyg" target="_blank" rel="noopener noreferrer">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </li>
@@ -420,106 +420,6 @@ export default class home extends Component {
                             </div>
                         </div>
                     </section>
-                    
-                    <section style={{backgroundColor: '#cbd1df'}} className="bt_bb_section bt_bb_top_spacing_large bt_bb_color_scheme_11 bt_bb_layout_boxed_limit_1600 bt_bb_vertical_align_top bt_bb_negative_margin_large">
-                        <div style={{marginTop: '8em'}} className="bt_bb_port">
-                            <div className="bt_bb_cell">
-                                <div className="bt_bb_cell_inner">
-                                    <div className="bt_bb_row bt_bb_layout_boxed_1200" data-structure="8-4">
-                                        <div class="bt_bb_column col-md-8 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated" data-width="8">
-                                            <div class="bt_bb_column_content">
-                                                <div class="bt_bb_column_content_inner">
-                                                    <header class="bt_bb_headline bt_bb_color_scheme_6 bt_bb_dash_none bt_bb_size_huge bt_bb_subheadline bt_bb_align_inherit" style={{zIndex: '1'}}>
-                                                        <h2><span class="bt_bb_headline_content"><span style={{color: "#00264a"}}><b>Bilan</b> du front commun pour le congo</span></span></h2>
-                                                        <div style={{color: "#00264a"}} class="bt_bb_headline_subheadline">December 2019 à nos jours</div>
-                                                    </header>
-                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div></div>
-                                            </div>
-                                        </div>
-                                        <div data-width="4" className="bt_bb_column col-md-4 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
-                                            <div className="bt_bb_column_content">
-                                                <div className="bt_bb_column_content_inner">
-                                                    <div className="bt_bb_image btFlag bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                        <span>
-                                                            
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div data-structure="3-3-3-3" className="bt_bb_row bt_bb_layout_boxed_1200">
-                                        <div data-width="3" className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_shape_inherit">
-                                            <div className="bt_bb_column_content">
-                                                <div className="bt_bb_column_content_inner">
-                                                    <div data-container="container_45864" data-container-pbid="45864" data-container-type="circle" data-container-percentage="0.8" data-container-text-color="#ffffff" data-container-stroke-width="4" data-container-trail-color="#d6dae6" data-container-trail-width="4" data-container-easing="linear" data-container-color-from="#ffffff" data-container-depth-from="4" data-container-color-to="#ffffff" data-container-depth-to="4" data-container-fill="" data-container-icon="" data-container-duration="1400" data-container-text="" className="bt_bb_progress_bar_advanced animate-adv_progressbar bt_bb_size_normal animated-adv_progressbar">
-                                                        <div className="container">
-                                                            <svg viewBox="0 0 100 100" style={{display: 'block', width: '100%'}}><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#d6dae6" stroke-width="4" fill-opacity="0"></path><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(255,255,255)" stroke-width="4" fill-opacity="0" style={{strokeDasharray: '301.635, 301.635', strokeDashoffset: '60.3271'}}></path></svg>
-                                                            <div class="progressbar-text" style={{color: 'rgb(255, 255, 255)'}}>80%</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
-                                                    <header class="bt_bb_headline bt_bb_font_weight_medium bt_bb_color_scheme_6 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"><h5 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>
-                                                    Soins de santé</span></span></h5></header>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div data-width="3" className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_shape_inherit">
-                                            <div className="bt_bb_column_content">
-                                                <div className="bt_bb_column_content_inner">
-                                                    <div data-container="container_45864" data-container-pbid="45864" data-container-type="circle" data-container-percentage="0.8" data-container-text-color="#ffffff" data-container-stroke-width="4" data-container-trail-color="#d6dae6" data-container-trail-width="4" data-container-easing="linear" data-container-color-from="#ffffff" data-container-depth-from="4" data-container-color-to="#ffffff" data-container-depth-to="4" data-container-fill="" data-container-icon="" data-container-duration="1400" data-container-text="" className="bt_bb_progress_bar_advanced animate-adv_progressbar bt_bb_size_normal animated-adv_progressbar">
-                                                        <div className="container">
-                                                            <svg viewBox="0 0 100 100" style={{display: 'block', width: '100%'}}><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#d6dae6" stroke-width="4" fill-opacity="0"></path><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(255,255,255)" stroke-width="4" fill-opacity="0" style={{strokeDasharray: '301.635, 301.635', strokeDashoffset: '60.3271'}}></path></svg>
-                                                            <div class="progressbar-text" style={{color: 'rgb(255, 255, 255)'}}>80%</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
-                                                    <header class="bt_bb_headline bt_bb_font_weight_medium bt_bb_color_scheme_6 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"><h5 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Economie</span></span></h5></header>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div data-width="3" className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_shape_inherit">
-                                            <div className="bt_bb_column_content">
-                                                <div className="bt_bb_column_content_inner">
-                                                    <div data-container="container_45864" data-container-pbid="45864" data-container-type="circle" data-container-percentage="0.8" data-container-text-color="#ffffff" data-container-stroke-width="4" data-container-trail-color="#d6dae6" data-container-trail-width="4" data-container-easing="linear" data-container-color-from="#ffffff" data-container-depth-from="4" data-container-color-to="#ffffff" data-container-depth-to="4" data-container-fill="" data-container-icon="" data-container-duration="1400" data-container-text="" className="bt_bb_progress_bar_advanced animate-adv_progressbar bt_bb_size_normal animated-adv_progressbar">
-                                                        <div className="container">
-                                                            <svg viewBox="0 0 100 100" style={{display: 'block', width: '100%'}}><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#d6dae6" stroke-width="4" fill-opacity="0"></path><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(255,255,255)" stroke-width="4" fill-opacity="0" style={{strokeDasharray: '301.635, 301.635', strokeDashoffset: '60.3271'}}></path></svg>
-                                                            <div class="progressbar-text" style={{color: 'rgb(255, 255, 255)'}}>80%</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
-                                                    <header class="bt_bb_headline bt_bb_font_weight_medium bt_bb_color_scheme_6 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"><h5 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Taxes</span></span></h5></header>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div data-width="3" className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_shape_inherit">
-                                            <div className="bt_bb_column_content">
-                                                <div className="bt_bb_column_content_inner">
-                                                    <div data-container="container_45864" data-container-pbid="45864" data-container-type="circle" data-container-percentage="0.8" data-container-text-color="#ffffff" data-container-stroke-width="4" data-container-trail-color="#d6dae6" data-container-trail-width="4" data-container-easing="linear" data-container-color-from="#ffffff" data-container-depth-from="4" data-container-color-to="#ffffff" data-container-depth-to="4" data-container-fill="" data-container-icon="" data-container-duration="1400" data-container-text="" className="bt_bb_progress_bar_advanced animate-adv_progressbar bt_bb_size_normal animated-adv_progressbar">
-                                                        <div className="container">
-                                                            <svg viewBox="0 0 100 100" style={{display: 'block', width: '100%'}}><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#d6dae6" stroke-width="4" fill-opacity="0"></path><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(255,255,255)" stroke-width="4" fill-opacity="0" style={{strokeDasharray: '301.635, 301.635', strokeDashoffset: '60.3271'}}></path></svg>
-                                                            <div class="progressbar-text" style={{color: 'rgb(255, 255, 255)'}}>80%</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_small bt_bb_border_style_none"></div>
-                                                    <header class="bt_bb_headline bt_bb_font_weight_medium bt_bb_color_scheme_6 bt_bb_dash_none bt_bb_size_small bt_bb_align_inherit"><h5 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Changement climatique</span></span></h5></header>
-                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
                     <Footer />
                 </main>
             </div>

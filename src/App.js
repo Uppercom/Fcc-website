@@ -17,6 +17,8 @@ import partiesListe from '../src/Component/parties/liste.jsx'
 import detailsParties from '../src/Component/parties/details.jsx'
 import membresPartie from '../src/Component/parties/membres.jsx'
 import formulaire from '../src/Component/adhesion/formulaire.jsx'
+import don from '../src/Component/don/index.jsx'
+import informations from '../src/Component/don/informations.jsx'
 import Home from '../src/Component/plateforme/home.jsx'
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
         <Route path="/s-engager/parties-politiques/:id" component={detailsParties} />
         <Route path="/s-engager/parties-politiques" component={partiesListe} />
         <Route path="/adhesion" component={formulaire} />
+        <Route path="/don/informations" component={informations} />
+        <Route path="/don" component={don} />
         <Route path="/" component={Home} />
       </Switch>
     </React.Fragment>
