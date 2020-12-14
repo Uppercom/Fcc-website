@@ -375,6 +375,24 @@ body{
   margin-bottom: 20px;
 }
 
+.b__nudge--bottom-50 {
+  margin-bottom: 50px;
+}
+
+.b__nudge--top-50 {
+  margin-top: 50px;
+}
+
+.l__wrapper--500, .l__wrapper--600 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l__wrapper--600 {
+  max-width: 600px;
+}
+
 
 label {
   font-size: 14px;
@@ -400,6 +418,14 @@ label {
 
 .l__row--top {
   align-items: flex-start;
+}
+
+.b__nudge--bottom-large {
+  margin-bottom: 30px;
+}
+
+.b__nudge--top-large {
+  margin-top: 30px;
 }
 
 .content article {
@@ -705,6 +731,7 @@ a.link--no-decor {
 
 button.btn {
   display: inline-block;
+  width: 100%;
 }
 
 .b__nudge--top {
@@ -731,6 +758,7 @@ button.btn {
 .text--medium-small {
   font-size: 20px;
   line-height: 27px;
+  font-weight: 700;
 }
 
 .text--larger {
@@ -761,6 +789,12 @@ button.btn {
 
 .b__nudge--bottom-small {
   margin-bottom: 30px;
+}
+
+.em-form .form__checkbox input[type=checkbox]:checked+label:before {
+  border-color: #1d5fd1;
+  background: #1d5fd1;
+  content: url(../src/Images/telechargement.svg);
 }
 
 @media (min-width: 1440px){

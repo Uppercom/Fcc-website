@@ -228,6 +228,10 @@
     align-items: flex-start;
 }
 
+.em-form .em-form__row .em-form__width--1 {
+    flex-grow: 1;
+}
+
 .amount-chooser__monthly {
     text-align: left;
     margin-bottom: 10px;
@@ -562,6 +566,252 @@
     font-size: 38px;
 }
 
+.donation__header.with-bkg {
+    background-image: url(https://storage.googleapis.com/en-marche-prod/static/donation-background.jpg);
+    background-position: center top -245px;
+}
+
+.donation__informations__recap {
+    border-bottom: 1px solid #e1e5ea;
+    margin-bottom: 30px;
+}
+
+.donation-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000;
+}
+
+.donation__informations__amount {
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: -.5px;
+    font-weight: 700;
+}
+
+.information__modal.inf-modl--pale-blue {
+    color: #698ab3;
+    background-color: #ebf4ff;
+}
+
+.information__modal {
+    padding: 25px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 3px;
+}
+
+.em-form .em-form__row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.em-form .em-form__row .em-form__group:last-child {
+    margin-right: 0;
+}
+
+.em-form .em-form__row .em-form__group {
+    flex-basis: 100%;
+    margin-right: 0;
+}
+
+.em-form .em-form__group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #444;
+}
+
+.em-form .em-form__group.em-form__checkbox--inline .form__checkbox, .em-form .em-form__group.em-form__checkbox--inline .form__radio, .em-form .em-form__group.em-form__radio--inline .form__radio {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.em-form .form__checkbox, .em-form .form__radio {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form__radio {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.em-form .form__radio input[type=radio] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__radio input[type=radio] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.em-form .form__checkbox label, .em-form .form__radio label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 34px;
+    margin: 0;
+}
+
+.form__radio label {
+    display: flex;
+    align-items: center;
+    margin: 5px 7px 5px 0;
+    text-align: left;
+}
+
+.em-form .em-form__group>.em-form__label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 10px;
+    min-height: 19px;
+}
+
+.em-form .em-form__group .em-form__field {
+    display: block;
+    box-sizing: border-box;
+    font-family: Roboto,Helvetica,sans-serif;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 12px;
+    color: #000;
+    margin: 0;
+    height: 54px;
+    border-radius: 3px;
+    border: 1px solid #e1e5ea;
+    background-color: #fff;
+    outline: 0;
+    transition: border .2s;
+    -webkit-transition: border .2s;
+}
+
+.em-form .form__checkbox label:before, .em-form .form__radio label:before {
+    box-sizing: border-box;
+    content: " ";
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    margin-right: 15px;
+    background: #fff;
+    border: 2px solid #e1e5ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.em-form .form__radio label:before {
+    border-radius: 50px;
+}
+
+.em-form .form__checkbox label:before, .em-form .form__radio label:before {
+    box-sizing: border-box;
+    content: " ";
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
+    margin-right: 15px;
+    background: #fff;
+    border: 2px solid #e1e5ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+.form__radio label:before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 5px;
+    transition: all .2s;
+    background: #e5e5e5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.em-form .form__radio input[type=radio]:checked+label:before {
+    box-sizing: border-box;
+    border: 8px solid #1d5fd1;
+    background: #fff;
+    content: "";
+}
+
+.form__checkbox label:before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 15px;
+    transition: all .2s;
+    background: #fff;
+    border: 1px solid #c9d4e4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.em-form .em-form__group>.em-form__label .em-form__required {
+    color: #e83434;
+}
+
+.form__checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.em-form .em-form__group--cgu .form__checkbox {
+    margin-bottom: 0;
+}
+
+.em-form .form__checkbox input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.css-g1d714-ValueContainer {
+    height: 54px;
+}
+
+.css-1uccc91-singleValue{
+    top: 56% !important;
+}
+
 @media (min-width: 1200px){
     .donation-distribution__item:nth-child(odd) {
         margin-right: 24px;
@@ -702,7 +952,27 @@
         width: calc(50% - 12px);
     }
 
-    
+    .donation__informations__form {
+        padding: 0 25px;
+    }
+
+    .em-form .em-form__row {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .em-form .em-form__row .em-form__group {
+        margin-right: 15px;
+    }
+
+    .em-form .em-form__row .em-form__group {
+        margin-right: 15px;
+    }
+
+    .em-form .em-form__group {
+        width: 100%;
+    }
 }
 
 @media (max-width: 650px){
