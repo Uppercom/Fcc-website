@@ -1,10 +1,52 @@
 import React, { Component } from 'react'
+import API from '../../Helpers/config.js'
+import { sliceText } from '../../Helpers/functions.js'
+import axios from 'axios'
+import Skeleton from 'react-loading-skeleton'
 import Menu from '../../Parts/menu/menu.jsx' 
 import Banner from '../../Images/hero_about_us.jpg' 
 import Footer from '../../Parts/footer.jsx' 
+import Default from '../../Images/blank-profile-picture-973460_640.png'
 
 export default class senateurs extends Component {
+    constructor(){
+        super()
+        this.state = {
+            senateurs : {
+                datas: [],
+                flag: false,
+                isLoading: false,
+                message: null,
+                no_datas: false
+            }
+        }
+    }
+
+    getDatas() {
+        this.setState({ senateurs : {isLoading : true}})
+        axios   
+            .get(`${API}/api/users/elected/senateur/null`)
+            .then(
+                (res) => {
+                    var state = res.data.state
+                    this.setState({
+                        senateurs : {
+                            flag: true,
+                            isLoading: false,
+                            datas : state ? res.data.datas : [],
+                            message: res.data.message,
+                            no_datas: state ? false : []
+                        },
+                    })
+                }
+            )
+    }
+
+    componentDidMount(){
+        this.getDatas()
+    }
     render() {
+        var { senateurs } = this.state
         return (
             <div>
                 <Menu />
@@ -21,7 +63,7 @@ export default class senateurs extends Component {
                                                         <div className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_separator bt_bb_top_spacing_large bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_dash_top bt_bb_size_huge bt_bb_superheadline bt_bb_align_inherit"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_superheadline">Histoire &amp; politiques</span><span class="bt_bb_headline_content"><span>Sénateurs</span></span></h1></header>
+                                                                <header class="bt_bb_headline bt_bb_size_extralarge bt_bb_superheadline"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Nos sénateurs</span></span></h1></header>
                                                                 <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
                                                             </div>
                                                         </div>
@@ -36,108 +78,59 @@ export default class senateurs extends Component {
                                     <div className="bt_bb_port">
                                         <div className="bt_bb_cell">
                                             <div className="bt_bb_cell_inner">
-                                                <div data-structure="12" className="bt_bb_row">
-                                                    <div data-width="12" className="bt_bb_column col-md-12 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
-                                                        <div className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <header class="bt_bb_headline bt_bb_color_scheme_8 bt_bb_dash_none bt_bb_size_large bt_bb_align_inherit"><h2><span class="bt_bb_headline_content"><span>Nos sénateurs</span></span></h2></header>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div data-structure="3-3-3-3" className="bt_bb_row bt_bb_column_gap_15 bt_bb_border_visible">
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                    <span>
-                                                                        <img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" class="btLazyLoadImage btLazyLoaded" /></span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
+                                                    {senateurs.flag && senateurs.datas.length > 0 ?
+                                                     senateurs.datas.map((item, key) => 
+                                                        <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
+                                                                <div className="bt_bb_column_content_inner">
+                                                                    <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
+                                                                        <span>
+                                                                            <img src={item.profile ? item.profile : Default} data-full_image_src={item.profile ? item.profile : Default} data-image_src={item.profile ? item.profile : Default} title="team_04" alt={item.profile ? item.profile : Default} class="btLazyLoadImage btLazyLoaded" /></span>
+                                                                    </div>
+                                                                    <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
+                                                                    <header class="bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '500'}} class="bt_bb_headline_superheadline">{item.district}</span><span class="bt_bb_headline_content"><span>{item.fullName}</span></span></h3></header>
+                                                                    <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
+                                                                        <span class="bt_bb_icon_holder">
+                                                                            <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
+                                                                        <span class="bt_bb_icon_holder">
+                                                                            <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                     )
+                                                     : <p></p> 
+                                                    }
 
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                    <span>
-                                                                        <img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/04/team_05.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/04/team_05.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/04/team_05.jpg" class="btLazyLoadImage btLazyLoaded" /></span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
-                                                                </div>
+                                                    {senateurs.isLoading &&
+                                                        <React.Fragment>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                    <span>
-                                                                        <img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" data-image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" class="btLazyLoadImage btLazyLoaded" />
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
-                                                                </div>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                    <span><img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" class="btLazyLoadImage btLazyLoaded" /></span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
-                                                                </div>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
                                                             </div>
-                                                        </div>
-                                                    </div>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
+                                                            </div>
+                                                        </React.Fragment>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
