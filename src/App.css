@@ -768,6 +768,14 @@ button.btn {
   font-weight: 700;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.flex{
+  display: flex;
+}
+
 .text--black {
   color: #000;
 }

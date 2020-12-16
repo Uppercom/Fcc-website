@@ -572,7 +572,7 @@
 }
 
 .donation__informations__recap {
-    border-bottom: 1px solid #e1e5ea;
+    /* border-bottom: 1px solid #e1e5ea; */
     margin-bottom: 30px;
 }
 
@@ -812,6 +812,158 @@
     top: 56% !important;
 }
 
+.donations_informations_content{
+    display: flex;
+}
+
+.donations_informations_content .donation__informations__recap{
+    width: 40%;
+}
+
+.donations_informations_content .donation__informations__form{
+    width: 55%;
+    padding-left: 10%;
+    margin-top: -1.3em;
+}
+
+.payement_item{
+    margin-bottom: 1em;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #ccc;
+
+}
+.payement_content{
+    padding: 1.5em 1em;
+    cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.payement_content.active{
+    background-color: #f5f5f5;
+}
+
+.payement_content:hover{
+    background-color: #f5f5f5;
+}
+
+.payement_content .payement_logo img{
+    max-height: 30px;
+    margin-left: .3em;
+}
+
+.payement_form{
+    padding: 1em !important;
+}
+
+.payement_form small{
+    max-height: 30px;
+    color: #686f7a;
+    margin-bottom: 0;
+    margin-top: 5px;
+    padding-left: 14px;
+    font-size: 12px;
+}
+
+.payement_title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.payment_description{
+    border: 1px solid #e8e9eb;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    box-sizing: border-box;
+    display: table;
+    margin-bottom: 10px;
+    padding: 30px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 8em;
+    margin-left: 2em;
+}
+
+.styles--sc-checkout-box__heading--3OsSx {
+    line-height: 24px;
+    vertical-align: middle;
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.styles--complete-checkout--3c324 .styles--sc-checkout-box__details_original--15Itn {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #cacbcc;
+    border-collapse: separate;
+}
+
+.styles--sc-checkout-box__details--3qPVD {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43em;
+    text-align: initial;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.styles--complete-checkout--3c324 .styles--sc-checkout-box__credits-total--2TagS {
+    margin-bottom: 0;
+}
+
+.styles--sc-checkout-box__credits-total--2TagS {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.47em;
+    margin-bottom: 10px;
+}
+
+.styles--sc-checkout-box__label--shrink--A3RaX {
+    width: auto;
+}
+
+.styles--sc-checkout-box__label--QwYNb {
+    line-height: 24px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.styles--sc-checkout-box__amount--2Wndg {
+    min-width: 65px;
+    padding-left: 10px;
+    text-align: end;
+}
+
+.styles--sc-checkout-box__total-price--2FYgE {
+    font-size: 19px;
+    line-height: 1.47em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.styles--legal-message--3RKvA {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.payment_content .payement_list{
+    width: 55%;
+}
+
+.chevron-next{
+    width: 10%;
+    position: relative;
+}
+
+.chevron-next svg{
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 @media (min-width: 1200px){
     .donation-distribution__item:nth-child(odd) {
         margin-right: 24px;
@@ -896,6 +1048,14 @@
     }
 }
 
+@media (min-width: 992px){
+    .styles--sc-checkout-box__details--3qPVD {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+}
+
 @media (min-width: 650px){
     .donation__header__steps ul li {
         font-size: 14px;
@@ -973,11 +1133,55 @@
     .em-form .em-form__group {
         width: 100%;
     }
+
+    
 }
 
 @media (max-width: 650px){
     .text--large {
         line-height: 1.2em;
         font-size: 24px;
+    }
+
+    .donations_informations_content{
+        display: block !important;
+    }
+    
+    .donations_informations_content .donation__informations__recap{
+        width: 100%;
+    }
+    
+    .donations_informations_content .donation__informations__form{
+        width: 100%;
+        padding-left: 0%;
+        margin-top: 0 !important;
+    }
+
+    .em-form .em-form__row .em-form__width--1{
+        width: 100%;
+    }
+
+    .b__nudge--top-large{
+        margin-top: 10px;
+    }
+
+    .payment_content .payement_list{
+        width: 100%;
+    }
+    
+    .payement_content .payement_logo img{
+        max-height: 24px;
+    }
+
+    .em-form .em-form__row .em-form__group{
+        width: 100%;
+    }
+
+    .payment_description{
+        margin-left: 0;
+    }
+
+    .btn-fat{
+        font-size: 14px;
     }
 }
