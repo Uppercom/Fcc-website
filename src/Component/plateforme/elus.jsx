@@ -26,7 +26,7 @@ export default class elus extends Component {
     getDatas() {
         this.setState({ deputes : {isLoading : true}})
         axios   
-            .get(`${API}/api/users/elected/national/null`)
+            .get(`${API}/api/users/elected/local/null`)
             .then(
                 (res) => {
                     var state = res.data.state
@@ -65,7 +65,7 @@ export default class elus extends Component {
                                                         <div className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_separator bt_bb_top_spacing_large bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_dash_top bt_bb_size_huge bt_bb_superheadline bt_bb_align_inherit"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_superheadline">Histoire &amp; politiques</span><span class="bt_bb_headline_content"><span>Nos deputés </span></span></h1></header>
+                                                                <header class="bt_bb_headline bt_bb_size_extralarge bt_bb_superheadline"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Nos deputés provinciaux</span></span></h1></header>
                                                                 <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
                                                             </div>
                                                         </div>
@@ -80,112 +80,62 @@ export default class elus extends Component {
                                     <div className="bt_bb_port">
                                         <div className="bt_bb_cell">
                                             <div className="bt_bb_cell_inner">
-                                                <div data-structure="12" className="bt_bb_row">
-                                                    <div data-width="12" className="bt_bb_column col-md-12 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
-                                                        <div className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <header class="bt_bb_headline bt_bb_color_scheme_8 bt_bb_dash_none bt_bb_size_large bt_bb_align_inherit"><h2><span class="bt_bb_headline_content"><span>Nos députés provinciaux</span></span></h2></header>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 <div data-structure="3-3-3-3" className="bt_bb_row bt_bb_column_gap_15 bt_bb_border_visible">
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                    <span>
-                                                                        <span class="legislatives__trombi__item__status legislatives__trombi__item__status--won">Élu(e)</span>
-                                                                        <img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" class="btLazyLoadImage btLazyLoaded" /></span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="title-absolute bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA-FUNA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
+                                                    {deputes.flag && deputes.datas.length > 0 ?
+                                                     deputes.datas.map((item, key) =>
+                                                            <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
+                                                                <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                    <div className="bt_bb_column_content_inner">
+                                                                        <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
+                                                                            <span>
+                                                                                <img src={item.profile ? item.profile : Default} data-full_image_src={item.profile ? item.profile : Default} data-image_src={item.profile ? item.profile : Default} title="team_04" alt={item.profile ? item.profile : Default} class="btLazyLoadImage btLazyLoaded" />
+                                                                                <span class="legislatives__trombi__item__status legislatives__trombi__item__status--won">Élu(e)</span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
+                                                                        <header class="title-absolute bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '500'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">{item.district}</span><span class="bt_bb_headline_content"><span>{item.fullName}</span></span></h3></header>
+                                                                        <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
+                                                                            <span class="bt_bb_icon_holder">
+                                                                                <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
+                                                                            <span class="bt_bb_icon_holder">
+                                                                                <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
+                                                        )
+                                                        :
+                                                        <p></p>
+                                                    } 
 
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                    <span>
-                                                                        <span class="legislatives__trombi__item__status legislatives__trombi__item__status--won">Élu(e)</span>
-                                                                        <img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/04/team_05.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/04/team_05.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/04/team_05.jpg" class="btLazyLoadImage btLazyLoaded" /></span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="title-absolute bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA-FUNA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
-                                                                </div>
+                                                    {deputes.isLoading &&
+                                                        <React.Fragment>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                    <span>
-                                                                        <img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" data-image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/05/team_09.jpg" class="btLazyLoadImage btLazyLoaded" />
-                                                                        <span class="legislatives__trombi__item__status legislatives__trombi__item__status--won">Élu(e)</span>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="title-absolute bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA-FUNA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
-                                                                </div>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="bt_bb_column col-md-3 col-sm-6 col-ms-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_text_indent bt_bb_shape_inherit animated">
-                                                        <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_image bt_bb_shape_square bt_bb_align_inherit bt_bb_hover_style_simple bt_bb_content_display_always bt_bb_content_align_middle">
-                                                                        <span class="legislatives__trombi__item__status legislatives__trombi__item__status--won">Élu(e)</span>
-                                                                    <span><img src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-full_image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" data-image_src="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" title="team_04" alt="http://vox-populi.bold-themes.com/party/wp-content/uploads/sites/3/2019/02/team_04.jpg" class="btLazyLoadImage btLazyLoaded" /></span>
-                                                                </div>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <header class="title-absolute bt_bb_headline bt_bb_color_scheme_15 bt_bb_dash_none bt_bb_size_small bt_bb_superheadline bt_bb_align_inherit"><h3 style={{fontWeight: '700'}}><span style={{fontWeight: '700'}} class="bt_bb_headline_superheadline">KINSHASA-FUNA</span><span class="bt_bb_headline_content"><span>Cindy James</span></span></h3></header>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="bt_bb_icon bt_bb_color_scheme_19 bt_bb_style_borderless bt_bb_size_small bt_bb_shape_circle bt_bb_align_inherit">
-                                                                    <span class="bt_bb_icon_holder">
-                                                                        <i style={{color: "#808080"}} class="fab fa-2x fa-twitter"></i>
-                                                                    </span>
-                                                                </div>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
                                                             </div>
-                                                        </div>
-                                                    </div>
+                                                            <div style={{backgroundColor: 'rgba(255, 255, 255, 1)', position: 'relative'}} className="bt_bb_column_content">
+                                                                <Skeleton height={200}/>
+                                                                <Skeleton height={20} width={240}/> <br/>
+                                                                <Skeleton height={20} width={150}/>
+                                                            </div>
+                                                        </React.Fragment>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
