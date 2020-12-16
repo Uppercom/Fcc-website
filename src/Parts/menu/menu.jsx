@@ -26,6 +26,9 @@ export default class menu extends Component {
                                         <Link to="/plateforme/a-propos">Qui sommes-nous ?</Link>
                                     </li>
                                     <li>
+                                        <Link to="/plateforme/vision">Notre vision</Link>
+                                    </li>
+                                    <li>
                                         <Link to="/plateforme/organisation">Notre organisation</Link>
                                     </li>
                                     <li>

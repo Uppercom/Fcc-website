@@ -768,6 +768,38 @@ button.btn {
   font-weight: 700;
 }
 
+.text-title {
+  text-transform: uppercase;
+  text-align: right;
+  font-family: 'Work Sans';
+  line-height: 1.4;
+  font-weight: 900 !important;
+}
+
+.play_button{
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  left: 43%;
+  top: 40%;
+  background-color: #ff3a3a;
+}
+
+.text--justify{
+  text-align: justify;
+}
+
+.play_button:hover{
+  background-color: #da2323;
+}
+
+.play_button svg{
+  color: #fff;
+  margin-top: .4em;
+}
+
 .bold {
   font-weight: 700;
 }

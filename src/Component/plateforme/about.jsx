@@ -12,27 +12,7 @@ export default class about extends Component {
                     <div className="btContentHolder">
                         <div className="btContent">
                             <div className="bt_bb_wrapper">
-                                <section style={{backgroundImage: `url(${Banner})`, backgroundPosition: '50% 0px'}} className="bt_bb_section bt_bb_top_spacing_large bt_bb_bottom_spacing_large bt_bb_color_scheme_1 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
-                                    <div className="bt_bb_port">
-                                        <div className="bt_bb_cell">
-                                            <div className="bt_bb_cell_inner">
-                                                <div data-structure="12" className="bt_bb_row">
-                                                    <div className="bt_bb_column col-md-12 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
-                                                        <div className="bt_bb_column_content">
-                                                            <div className="bt_bb_column_content_inner">
-                                                                <div className="bt_bb_separator bt_bb_top_spacing_large bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_dash_top bt_bb_size_huge bt_bb_superheadline bt_bb_align_inherit"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_superheadline">Histoire &amp; politiques</span><span class="bt_bb_headline_content"><span>La plateforme</span></span></h1></header>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-
-                                <section className="bt_bb_section bt_bb_top_spacing_large bt_bb_bottom_spacing_large bt_bb_color_scheme_14 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top">
+                                <section className="bt_bb_section bt_bb_top_spacing_small bt_bb_bottom_spacing_small bt_bb_color_scheme_14 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top">
                                     <div className="bt_bb_port">
                                         <div className="bt_bb_cell">
                                             <div className="bt_bb_cell_inner">
@@ -41,12 +21,28 @@ export default class about extends Component {
                                                         <div className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div data-colomuns="2" style={{width: '566px'}} className="bt_bb_masonry_image_grid bt_bb_grid_container bt_bb_columns_2 bt_bb_gap_large">
-                                                                    <div data-colomuns="2" style={{position: 'relative', height: '624px'}} className="bt_bb_masonry_post_image_content masonry">
+                                                                    <div data-colomuns="2" style={{position: 'relative'}} className="bt_bb_masonry_post_image_content masonry">
                                                                         <div className="bt_bb_grid_sizer masonry-brick"></div>
                                                                         <div className="bt_bb_grid_item bt_bb_tile_format_21 masonry-brick" data-hw="0.66666666666667" data-src={Banner} data-src-full={Banner} style={{height: '417px', position: 'absolute', left: '0%', top: '0px'}}>
                                                                             <div data-hw="0.66666666666667" className="bt_bb_grid_item_inner">
                                                                                 <div className="bt_bb_grid_item_inner_image">
                                                                                     <img src={Banner} alt="" srcset=""/>
+                                                                                    <button className="play_button">
+                                                                                        <svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24"
+                                                                                            height="24"
+                                                                                            fill="none"
+                                                                                            stroke="currentColor"
+                                                                                            strokeLinecap="round"
+                                                                                            strokeLinejoin="round"
+                                                                                            strokeWidth="2"
+                                                                                            className="feather feather-play"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            >
+                                                                                            <path d="M5 3L19 12 5 21 5 3z"></path>
+                                                                                        </svg>
+                                                                                    </button>
                                                                                 </div>
                                                                                 <div className="bt_bb_grid_item_inner_content"></div>
                                                                             </div>
@@ -60,25 +56,10 @@ export default class about extends Component {
                                                     <div data-width="6" className="bt_bb_column col-md-6 col-sm-12 bt_bb_align_left bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
                                                         <div class="bt_bb_column_content">
                                                             <div class="bt_bb_column_content_inner">
-                                                                <header class="bt_bb_headline bt_bb_dash_none bt_bb_size_large bt_bb_subheadline bt_bb_align_inherit">
-                                                                    <h3><span class="bt_bb_headline_content"><span>Principes directeurs</span></span></h3>
-                                                                    <div class="bt_bb_headline_subheadline">Nous fournissons tout un ensemble de services pour assurer une croissance stable</div>
+                                                                <header class="bt_bb_top_spacing_large bt_bb_headline bt_bb_dash_none bt_bb_size_large bt_bb_subheadline bt_bb_align_inherit">
+                                                                    <h3 style={{marginTop: '3em'}} className="text-title"><span class="bt_bb_headline_content"><span>…initier les réformes nécessaires en vue d’un Congo Un et Fort</span></span></h3>
+                                                                    {/* <div class="bt_bb_headline_subheadline">Nous fournissons tout un ensemble de services pour assurer une croissance stable</div> */}
                                                                 </header>
-                                                                <div class="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
-                                                                <div class="bt_bb_text">
-                                                                    <ul>
-                                                                        <li>Prioritizing the most vulnerable</li>
-                                                                        <li>Lowering health care costs</li>
-                                                                        <li>Sensible immigration reform</li>
-                                                                        <li>Promoting and working for democracy and diversity</li>
-                                                                        <li>Supporting our veterans and military families</li>
-                                                                        <li>Guaranteeing Civil Rights</li>
-                                                                        <li>Guaranteeing Women’s Rights</li>
-                                                                        <li>Building 21st Century Infrastructure</li>
-                                                                        <li>Fostering a Manufacturing Renaissance</li>
-                                                                        <li>Creating Good-Paying Clean Energy Jobs</li>
-                                                                    </ul>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -87,6 +68,36 @@ export default class about extends Component {
                                         </div>
                                     </div>
                                 </section>
+
+                                <section className="bt_bb_section bt_bb_top_spacing_large bt_bb_bottom_spacing_small bt_bb_color_scheme_1 bt_bb_layout_boxed_700 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
+                                    <div className="bt_bb_port">
+                                        <div className="bt_bb_cell">
+                                            <h2 style={{fontWeight: '900', fontSize: '35px'}} class="b__nudge--bottom text--center text--normal">Le front commun pour le congo</h2>
+                                            <div class="text--center">
+                                            Le Front commun pour le Congo est un rassemblement politique qui poursuit une ambition forte : initier les réformes nécessaires en vue d’un Congo Un et Fort… dans le but de soutenir ses objectifs, lesquels visent l’émergence du Congo. Ce mouvement n’est pas une addition d’individus, mais le rassemblement de personnes engagées qui partagent un socle de valeurs et la volonté de regarder la réalité en face pour mieux la transformer.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section className="bt_bb_section bt_bb_top_spacing_small bt_bb_bottom_spacing_small bt_bb_color_scheme_1 bt_bb_layout_boxed_700 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
+                                    <div className="bt_bb_port">
+                                        <div className="bt_bb_cell">
+                                            <h2 style={{fontWeight: '900', fontSize: '35px'}} class="b__nudge--bottom text--center text--normal">Naissance du mouvement</h2>
+                                            <div class="text--center">
+                                                <p>En 2016, Joseph Kabila initiait le FCC avec la volonté de ‘‘refonder par le bas’’ pour atteindre les objectifs de l’émergence du Congo. La raison d’être du FCC est de rassembler toutes les bonnes volontés autour d’une ambition positive pour notre pays. Peu importe les origines religieuses ou provinciales, seule compte notre volonté partagée de progrès au service de l’intérêt général. Sur le terrain, le mouvement se structure grâce à l’énergie de ses adhérents : des référents sur l’ensemble du territoire. </p>
+                                                <p>La victoire des candidats FCC partout en RDC marque un profond renouvellement politique dont notre démocratie avait besoin : fidèle à sa promesse, le FCC a mis au jour une représentation nationale digne de ce nom.</p>
+                                            </div>
+                                            <div className="text--center">
+                                                <button style={{maxWidth: '100%'}} type="submit" id="adherent_registration_submit" name="adherent_registration[submit]" class="btn btn--red btn--large-and-medium b__nudge--top form btn">
+                                                    <i class="far fa-clipboard"></i>&nbsp;
+                                                    Telecharger notre charte des valeurs
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
                             </div>
                         </div>
                     </div>
