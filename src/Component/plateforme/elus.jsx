@@ -1,10 +1,54 @@
 import React, { Component } from 'react'
+import API from '../../Helpers/config.js'
+import { sliceText } from '../../Helpers/functions.js'
+import axios from 'axios'
+import Skeleton from 'react-loading-skeleton'
 import Menu from '../../Parts/menu/menu.jsx' 
 import Banner from '../../Images/hero_about_us.jpg' 
 import Footer from '../../Parts/footer.jsx' 
+import Default from '../../Images/blank-profile-picture-973460_640.png'
+import { Link } from 'react-router-dom'
 
 export default class elus extends Component {
+    constructor(){
+        super()
+        this.state = {
+            deputes : {
+                datas: [],
+                flag: false,
+                isLoading: false,
+                message: null,
+                no_datas: false
+            }
+        }
+    }
+
+    getDatas() {
+        this.setState({ deputes : {isLoading : true}})
+        axios   
+            .get(`${API}/api/users/elected/national/null`)
+            .then(
+                (res) => {
+                    var state = res.data.state
+                    this.setState({
+                        deputes : {
+                            flag: true,
+                            isLoading: false,
+                            datas : state ? res.data.datas : [],
+                            message: res.data.message,
+                            no_datas: state ? false : []
+                        },
+                    })
+                }
+            )
+    }
+
+    componentDidMount(){
+        this.getDatas()
+    }
+
     render() {
+        var { deputes } = this.state
         return (
             <div>
                 <Menu />

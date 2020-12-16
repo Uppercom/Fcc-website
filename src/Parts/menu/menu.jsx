@@ -44,17 +44,10 @@ export default class menu extends Component {
                         <div className="l__row">
                             <div className="nav-dropdown">
                                 <p className="mb-0">
-                                    Actualités
-                                    <img src={chevronDown} alt="Menu" className="nav__chevron" srcset=""/>
+                                    <Link to="/actualites/liste">
+                                        Actualités
+                                    </Link>
                                 </p>
-                                <ul className="nav-dropdown__item">
-                                    <li>
-                                        <a href="#">Nos activités</a>
-                                    </li>
-                                    <li>
-                                        <Link to="/actualites/liste">Toutes nos actualités</Link>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
 
