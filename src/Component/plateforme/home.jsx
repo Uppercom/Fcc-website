@@ -26,7 +26,7 @@ export default class home extends Component {
     getArticles() {
         this.setState({ articles : {isLoading : true}})
         axios
-            .get(`${API}/api/admin/news/4`)
+            .get(`${API}/api/admin/news/5`)
             .then(
                 (res) => {
                     if (res.data.state) {
@@ -199,16 +199,16 @@ export default class home extends Component {
                                                     <div className="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
                                                     <header className="bt_bb_headline bt_bb_color_scheme_14 bt_bb_dash_none bt_bb_size_large bt_bb_align_inherit">
                                                         <h2>
-                                                            <span class="bt_bb_headline_content"><span>Nous comptons sur votre<b> soutiens!</b></span></span>
+                                                            <span class="bt_bb_headline_content"><span>Adhérer au Front commun pour le Congo<b> (FCC) !</b></span></span>
                                                         </h2>
                                                     </header>
                                                     <div className="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
                                                     <div className="bt_bb_text">
-                                                        <p>Elections make a fundamental contribution to democratic governance. Because direct democracy – a form of government in which political decisions are made directly by the entire body of qualified citizens – is impractical in most modern societies, democratic government must be conducted through representatives.</p>
+                                                        <p>Les mouvements politiques vivent des apports de leurs membres. Mais l’apport en idées est le plus primordial et ensuite viendra la contribution financière. Vous voulez contribuer à la transformation du FCC ? Rejoignez les milliers d’autres adhérents ! Il suffit d’un clic et vous avez un mot à dire. </p>
                                                     </div>
                                                     <div className="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
                                                     
-                                                    <a className="btn btn--red" href="/don">Faire un don</a>
+                                                    <Link className="btn btn--red" to="/adhesion">Adherer</Link>
 
                                                     <div className="bt_bb_separator bt_bb_bottom_spacing_normal bt_bb_border_style_none"></div>
 
@@ -298,7 +298,7 @@ export default class home extends Component {
                                                                     </span>
                                                                     <div className="bt_bb_service_content">
                                                                         <div class="bt_bb_service_content_title">3</div>
-                                                                        <div class="bt_bb_service_content_text">Organiser des grands rassemblements</div>
+                                                                        <div class="bt_bb_service_content_text">Organiser des grands rassemblements </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -354,7 +354,7 @@ export default class home extends Component {
                                                                     </span>
                                                                     <div className="bt_bb_service_content">
                                                                         <div class="bt_bb_service_content_title">5</div>
-                                                                        <div class="bt_bb_service_content_text">Imprimer des tracks</div>
+                                                                        <div class="bt_bb_service_content_text">Imprimer des tracs</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
