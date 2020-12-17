@@ -79,7 +79,66 @@ export default class vision extends Component {
                                     </div>
                                 </section>
 
-                                <section className="bt_bb_section bt_bb_top_spacing_small bt_bb_bottom_spacing_small bt_bb_color_scheme_1 bt_bb_layout_boxed_700 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
+                                <section className="bt_bb_section bt_bb_top_spacing_small bt_bb_bottom_spacing_small bt_bb_color_scheme_14 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top">
+                                    <div className="bt_bb_port">
+                                        <div className="bt_bb_cell">
+                                            <div className="bt_bb_cell_inner">
+                                                <div className="bt_bb_row bt_bb_column_gap_35" data-structure="6-6">
+                                                    
+
+                                                    <div data-width="6" className="bt_bb_column col-md-6 col-sm-12 bt_bb_align_left bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
+                                                        <div class="bt_bb_column_content">
+                                                            <div class="bt_bb_column_content_inner">
+                                                                <header class="bt_bb_top_spacing_large bt_bb_headline bt_bb_dash_none bt_bb_size_large bt_bb_subheadline bt_bb_align_inherit">
+                                                                    <h3 style={{marginTop: '2em', textAlign: 'left'}} className="text-title"><span class="bt_bb_headline_content"><span>...des cadres de l’avenir car un regroupement nait pour pérenniser ses idées et son combat.</span></span></h3>
+                                                                    {/* <div class="bt_bb_headline_subheadline">Nous fournissons tout un ensemble de services pour assurer une croissance stable</div> */}
+                                                                </header>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div data-width="6" className="bt_bb_column col-md-6 col-sm-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
+                                                        <div className="bt_bb_column_content">
+                                                            <div className="bt_bb_column_content_inner">
+                                                                <div data-colomuns="2" style={{width: '566px'}} className="bt_bb_masonry_image_grid bt_bb_grid_container bt_bb_columns_2 bt_bb_gap_large">
+                                                                    <div data-colomuns="2" style={{position: 'relative'}} className="bt_bb_masonry_post_image_content masonry">
+                                                                        <div className="bt_bb_grid_sizer masonry-brick"></div>
+                                                                        <div className="bt_bb_grid_item bt_bb_tile_format_21 masonry-brick" data-hw="0.66666666666667" data-src={Banner} data-src-full={Banner} style={{height: '417px', position: 'absolute', left: '0%', top: '0px'}}>
+                                                                            <div data-hw="0.66666666666667" className="bt_bb_grid_item_inner">
+                                                                                <div className="bt_bb_grid_item_inner_image">
+                                                                                    <img src={Banner} alt="" srcset=""/>
+                                                                                    <button className="play_button">
+                                                                                        <svg
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24"
+                                                                                            height="24"
+                                                                                            fill="none"
+                                                                                            stroke="currentColor"
+                                                                                            strokeLinecap="round"
+                                                                                            strokeLinejoin="round"
+                                                                                            strokeWidth="2"
+                                                                                            className="feather feather-play"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            >
+                                                                                            <path d="M5 3L19 12 5 21 5 3z"></path>
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div className="bt_bb_grid_item_inner_content"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section className="bt_bb_section bt_bb_top_spacing_large bt_bb_bottom_spacing_small bt_bb_color_scheme_1 bt_bb_layout_boxed_700 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
                                     <div className="bt_bb_port">
                                         <div className="bt_bb_cell">
                                             <h2 style={{fontWeight: '900', fontSize: '35px'}} class="b__nudge--bottom text--center text--normal">Notre vision</h2>
