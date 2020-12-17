@@ -137,36 +137,18 @@ export default class home extends Component {
                                 articles.flag && articles.datas.length > 0 ?
                                 articles.datas.map((item, key) =>
                                     <li className="card card--2 card--2--article l__col--bottom">
-                                        <div className="cs card--small ">
-                                            <Link to={`/actualites/${item._id}`} className="background-container">
-                                                <div style={{backgroundImage: `url(${item.cover})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
-
+                                        <div className="content-block m-b-xs-30">
+                                            <Link className="align-self-center" to="#">
+                                                <img class="img-fluid m-r-xs-30" src={item.cover} alt="carona-top" />
+                                                <div class="grad-overlay"></div>
+                                            </Link>
+                                            <div className="media-caption grad-overlay">
+                                                <div className="caption-content">
+                                                    <h3 class="axil-post-title hover-line hover-line">
+                                                        <Link to={`/actualites/${item._id}`}>{sliceText(item.title, 50)}</Link>
+                                                    </h3>
                                                 </div>
-                                            </Link>
-                                            <Link to={`/actualites/${item._id}`} className="headline link--no-decor">
-                                                <h2>{sliceText(item.title, 50)}</h2>
-                                            </Link>
-                                            <div className="share">
-                                                Partagez
-                                                <span role="button">
-                                                    <i className="fab fa-facebook-square"></i>
-                                                </span>
-                                                <span role="button">
-                                                    <i className="fab fa-twitter"></i>
-                                                </span>
                                             </div>
-                                        </div>
-                                        <div className="cm card--medium">
-                                            <Link to={`/actualites/${item._id}`} style={{backgroundImage: `url(${item.cover})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
-                                                <div className="background">
-                                                    <div class="content">
-                                                        <h2 class="headline link--no-decor b__nudge--bottom-medium">
-                                                            {item.title}
-                                                        </h2>
-                                                        <div class="btn btn--no-border">Cliquez ici</div>
-                                                    </div>
-                                                </div>
-                                            </Link>
                                         </div>
                                     </li>
                                 )
