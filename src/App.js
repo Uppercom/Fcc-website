@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom'
 import './App.css';
 
 import About from '../src/Component/plateforme/about.jsx'
+import Vision from '../src/Component/plateforme/vision.jsx'
+import Objectifs from '../src/Component/plateforme/objectifs.jsx'
 import Organisation from '../src/Component/plateforme/organisation.jsx'
 import Depute from '../src/Component/plateforme/depute.jsx'
 import Elus from '../src/Component/plateforme/elus.jsx'
@@ -26,7 +28,9 @@ function App() {
   return (
     <React.Fragment>
       <Switch>
+        <Route path="/plateforme/vision" component={Vision} />
         <Route path="/plateforme/a-propos" component={About} />
+        <Route path="/plateforme/objectifs" component={Objectifs} />
         <Route path="/plateforme/organisation" component={Organisation} />
         <Route path="/plateforme/deputes" component={Depute} />
         <Route path="/plateforme/elus-locaux" component={Elus} />
