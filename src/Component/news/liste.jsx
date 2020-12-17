@@ -7,6 +7,7 @@ import Menu from '../../Parts/menu/menu.jsx'
 import Banner from '../../Images/news.jpg' 
 import Footer from '../../Parts/footer.jsx'
 import { Link } from 'react-router-dom'
+import { Tabs, Tab } from 'react-bootstrap'
 
 
 export default class newsListe extends Component {
