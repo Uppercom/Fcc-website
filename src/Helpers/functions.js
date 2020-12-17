@@ -115,6 +115,9 @@ const customDateLetters = (date) => {
                     return null;
             }
         },
+        year = function () {
+            return myDate.getFullYear()
+        },
         heure = function () {
 
             return myDate.getHours() < 10 ? '0' + myDate.getHours() : myDate.getHours();
@@ -129,6 +132,7 @@ const customDateLetters = (date) => {
     return {
         jour : jour(),
         mois : mois(),
+        year : year(),
         heure : heure(),
         minute : minute()
     }

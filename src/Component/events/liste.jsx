@@ -109,7 +109,7 @@ export default class eventsListe extends Component {
                                                                                         <div class="bt_bb_single_event_details">
                                                                                             <div class="bt_bb_single_event_content_title">{item.title}</div>
                                                                                             <div class="bt_bb_single_event_content_description"><i class="fas fa-map-marker-alt"></i>&nbsp;{item.location.town}, {item.location.region}<br /> {item.location.street}</div> <br/>
-                                                                                            <a style={{color: '#fff'}} class="btn btn--red b__nudge--right-extra-large" href="/don">Voir plus</a>
+                                                                                            <Link style={{color: '#fff'}} class="btn btn--red b__nudge--right-extra-large" to={"/s-engager/evenements/" + item._id}>Voir plus</Link>
                                                                                         </div>
                                                                                     </div> <br/>
                                                                                 </React.Fragment>
