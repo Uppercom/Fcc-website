@@ -68,6 +68,11 @@ export default class vision extends Component {
                                                                                 Notre organisation
                                                                             </Link>
                                                                         </span>
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                            <Link className="link--no-decor" to="/plateforme/charte">
+                                                                                Notre charte des valeurs
+                                                                            </Link>
+                                                                        </span>
                                                                     </div>
                                                                 </div>
                                                             </div>

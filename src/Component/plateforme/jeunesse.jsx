@@ -43,31 +43,41 @@ export default class vision extends Component {
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_masonry_post_grid bt_bb_grid_container bt_bb_columns_3 bt_bb_gap_normal" data-columns="3">
                                                                     <div class="bt_bb_post_grid_filter">
-                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="">
-                                                                            <Link className="link--no-decor" to="/plateforme/a-propos">
-                                                                                Qui somme-nous
-                                                                            </Link>
-                                                                        </span>
-                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
-                                                                            <Link className="link--no-decor" to="/plateforme/vision">
-                                                                                Notre vision
-                                                                            </Link>
-                                                                        </span>
-                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
-                                                                            <Link className="link--no-decor" to="/plateforme/objectifs">
-                                                                                Nos objectifs
-                                                                            </Link>
-                                                                        </span>
-                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item active" data-category="achievement">
-                                                                            <Link className="link--no-decor" to="/plateforme/jeunesse">
-                                                                                Notre jeunesse
-                                                                            </Link>
-                                                                        </span>
-                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
-                                                                            <Link className="link--no-decor" to="/plateforme/organisation">
-                                                                                Notre organisation
-                                                                            </Link>
-                                                                        </span>
+                                                                        <Link className="link--no-decor" to="/plateforme/a-propos">
+                                                                            <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="">
+                                                                                    Qui somme-nous
+                                                                            </span>
+                                                                        </Link>
+
+                                                                        <Link className="link--no-decor" to="/plateforme/vision">
+                                                                            <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                                    Notre vision
+                                                                            </span>
+                                                                        </Link>
+
+                                                                        <Link className="link--no-decor" to="/plateforme/objectifs">
+                                                                            <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                                    Nos objectifs
+                                                                            </span>
+                                                                        </Link>
+
+                                                                        <Link className="link--no-decor" to="/plateforme/jeunesse">
+                                                                            <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item active" data-category="achievement">
+                                                                                    Notre jeunesse
+                                                                            </span>
+                                                                        </Link>
+
+                                                                        <Link className="link--no-decor" to="/plateforme/organisation">
+                                                                            <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                                    Notre organisation
+                                                                            </span>
+                                                                        </Link>
+
+                                                                        <Link className="link--no-decor" to="/plateforme/charte">
+                                                                            <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                                Notre charte des valeurs
+                                                                            </span>
+                                                                        </Link> 
                                                                     </div>
                                                                 </div>
                                                             </div>

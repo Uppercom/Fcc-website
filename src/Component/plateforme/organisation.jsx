@@ -68,6 +68,11 @@ export default class organisation extends Component {
                                                                                 Notre organisation
                                                                             </Link>
                                                                         </span>
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                            <Link className="link--no-decor" to="/plateforme/charte">
+                                                                                Notre charte des valeurs
+                                                                            </Link>
+                                                                        </span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -166,7 +171,7 @@ export default class organisation extends Component {
                                                     <div data-width="12" className="bt_bb_column col-md-12 col-ms-12 bt_bb_align_center bt_bb_vertical_align_top bt_bb_animation_fade_in animate bt_bb_padding_normal bt_bb_shape_inherit animated">
                                                         <div className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
-                                                                <header class="bt_bb_headline bt_bb_color_scheme_8 bt_bb_dash_none bt_bb_size_large bt_bb_align_inherit"><h2><span class="bt_bb_headline_content"><span>Leadership</span></span></h2></header>
+                                                                <header class="bt_bb_headline bt_bb_color_scheme_8 bt_bb_dash_none bt_bb_size_large bt_bb_align_inherit"><h2><span class="bt_bb_headline_content"><span>Les presidents</span></span></h2></header>
                                                                 <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
                                                             </div>
                                                         </div>

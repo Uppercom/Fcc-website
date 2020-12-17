@@ -7,6 +7,7 @@ import Vision from '../src/Component/plateforme/vision.jsx'
 import Jeunesse from '../src/Component/plateforme/jeunesse.jsx'
 import Objectifs from '../src/Component/plateforme/objectifs.jsx'
 import Organisation from '../src/Component/plateforme/organisation.jsx'
+import Chartes from '../src/Component/plateforme/charte.jsx'
 import Depute from '../src/Component/plateforme/depute.jsx'
 import Elus from '../src/Component/plateforme/elus.jsx'
 import Senateurs from '../src/Component/plateforme/senateurs.jsx'
@@ -34,6 +35,7 @@ function App() {
         <Route path="/plateforme/objectifs" component={Objectifs} />
         <Route path="/plateforme/jeunesse" component={Jeunesse} />
         <Route path="/plateforme/organisation" component={Organisation} />
+        <Route path="/plateforme/charte" component={Chartes} />
         <Route path="/plateforme/deputes" component={Depute} />
         <Route path="/plateforme/elus-locaux" component={Elus} />
         <Route path="/plateforme/senateurs" component={Senateurs} />

@@ -68,6 +68,11 @@ export default class about extends Component {
                                                                                 Notre organisation
                                                                             </Link>
                                                                         </span>
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                            <Link className="link--no-decor" to="/plateforme/charte">
+                                                                                Notre charte des valeurs
+                                                                            </Link>
+                                                                        </span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -154,12 +159,19 @@ export default class about extends Component {
                                                 <p>En 2016, Joseph Kabila initiait le FCC avec la volonté de ‘‘refonder par le bas’’ pour atteindre les objectifs de l’émergence du Congo. La raison d’être du FCC est de rassembler toutes les bonnes volontés autour d’une ambition positive pour notre pays. Peu importe les origines religieuses ou provinciales, seule compte notre volonté partagée de progrès au service de l’intérêt général. Sur le terrain, le mouvement se structure grâce à l’énergie de ses adhérents : des référents sur l’ensemble du territoire. </p>
                                                 <p>La victoire des candidats FCC partout en RDC marque un profond renouvellement politique dont notre démocratie avait besoin : fidèle à sa promesse, le FCC a mis au jour une représentation nationale digne de ce nom.</p>
                                             </div>
-                                            <div className="text--center">
-                                                <button style={{maxWidth: '100%'}} type="submit" id="adherent_registration_submit" name="adherent_registration[submit]" class="btn btn--red btn--large-and-medium b__nudge--top form btn">
-                                                    <i class="far fa-clipboard"></i>&nbsp;
-                                                    Telecharger notre charte des valeurs
-                                                </button>
+                                            
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section className="bt_bb_section bt_bb_top_spacing_small bt_bb_bottom_spacing_small bt_bb_color_scheme_1 bt_bb_layout_boxed_700 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
+                                    <div className="bt_bb_port">
+                                        <div className="bt_bb_cell">
+                                            <h2 style={{fontWeight: '900', fontSize: '35px'}} class="b__nudge--bottom text--center text--normal">Naissance du mouvement</h2>
+                                            <div class="text--center">
+                                                <p>Tout mouvement politique tire sa raison d’être du fait de chercher à susciter une certaine forme de changement sociétal ou politique identifiable (ou à maintenir le statu quo). Le regroupement FCC et son organisation sont donc les instruments d’un objectif sociétal ou politique plus large, et pas une fin en soi. La plupart des partis politiques qui la composent disposent d’une déclaration propre de principes détaillant les orientations et valeurs idéologiques (démocratie, solidarité, liberté individuelle, pérennité écologique, non-discrimination et égalité, etc.).</p>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </section>
