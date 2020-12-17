@@ -76,7 +76,7 @@ export default class newsListe extends Component {
                                                         <div className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_separator bt_bb_top_spacing_large bt_bb_border_style_none"></div>
-                                                                <header class="bt_bb_headline bt_bb_size_extralarge bt_bb_superheadline"><h1 style={{color: '#fff'}}><span class="bt_bb_headline_content"><span>Toute l'actualités</span></span></h1></header>
+                                                                <header class="bt_bb_headline bt_bb_size_extralarge bt_bb_superheadline"><h1 style={{color: '#fff', fontWeight: '700'}}><span class="bt_bb_headline_content"><span>Toute l'actualités</span></span></h1></header>
                                                                 <div class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none"></div>
                                                             </div>
                                                         </div>
@@ -95,41 +95,38 @@ export default class newsListe extends Component {
                                                         <div className="bt_bb_column_content">
                                                             <div className="bt_bb_column_content_inner">
                                                                 <div className="bt_bb_masonry_post_grid bt_bb_grid_container bt_bb_columns_3 bt_bb_gap_normal" data-columns="3">
+                                                                    <div class="bt_bb_post_grid_filter">
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item active" data-category="">
+                                                                            <Link to="/actualites/liste">
+                                                                                Toute l'actualité
+                                                                            </Link>
+                                                                        </span>
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="achievement">
+                                                                            <Link to="/actualites/2/sante">
+                                                                                Discours
+                                                                            </Link>
+                                                                        </span>
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="campaign">Médias</span>
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="campaign">Communiqués</span>
+                                                                        <span style={{fontWeight: '400'}} class="bt_bb_post_grid_filter_item" data-category="economy">Activités du coordonateur</span>
+                                                                    </div>
                                                                     <ul className="l__row l__row--wrap l__row--top space--20-0 l__row--h-stretch-around l__mobile--col">
                                                                         {
                                                                             articles.flag && articles.datas.length > 0 ?
                                                                             articles.datas.map((item, key) =>
                                                                                 <li className="card card--2 card--2--article l__col--bottom">
-                                                                                    <div className="cs card--small ">
-                                                                                        <Link to={`/actualites/${item._id}`} className="background-container">
-                                                                                            <div style={{backgroundImage: `url(${item.cover})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
-
+                                                                                    <div className="content-block m-b-xs-30">
+                                                                                        <Link className="align-self-center" to="#">
+                                                                                            <img class="img-fluid m-r-xs-30" src={item.cover} alt="carona-top" />
+                                                                                            <div class="grad-overlay"></div>
+                                                                                        </Link>
+                                                                                        <div className="media-caption grad-overlay">
+                                                                                            <div className="caption-content">
+                                                                                                <h3 class="axil-post-title hover-line hover-line">
+                                                                                                    <Link to={`/actualites/${item._id}`}>{sliceText(item.title, 50)}</Link>
+                                                                                                </h3>
                                                                                             </div>
-                                                                                        </Link>
-                                                                                        <Link to={`/actualites/${item._id}`} className="headline link--no-decor">
-                                                                                            <h2>{sliceText(item.title, 50)}</h2>
-                                                                                        </Link>
-                                                                                        <div className="share">
-                                                                                            Partagez
-                                                                                            <span role="button">
-                                                                                                <i className="fab fa-facebook-square"></i>
-                                                                                            </span>
-                                                                                            <span role="button">
-                                                                                                <i className="fab fa-twitter"></i>
-                                                                                            </span>
                                                                                         </div>
-                                                                                    </div>
-                                                                                    <div className="cm card--medium">
-                                                                                        <Link to={`/actualites/${item._id}`} style={{backgroundImage: `url(${item.cover})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background-container card__background progressive-background link--no-decor">
-                                                                                            <div className="background">
-                                                                                                <div class="content">
-                                                                                                    <h2 class="headline link--no-decor b__nudge--bottom-medium">
-                                                                                                        {item.title}
-                                                                                                    </h2>
-                                                                                                    <div class="btn btn--no-border">Cliquez ici</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </Link>
                                                                                     </div>
                                                                                 </li>
                                                                             )

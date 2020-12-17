@@ -31,3 +31,115 @@
 .btShareColumn{
     text-align: right;
 }
+
+.content-block {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+
+.content-block>a {
+    display: block;
+    width: 100%;
+}
+
+.m-b-xs-30 {
+    margin-bottom: 3rem !important;
+}
+
+.content-block img{
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.content-block .grad-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grad-overlay {
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(18,18,19,0)),to(#121213));
+    background: -webkit-linear-gradient(top,rgba(18,18,19,0) 0%,#121213 100%);
+    background: -o-linear-gradient(top,rgba(18,18,19,0) 0%,#121213 100%);
+    background: linear-gradient(180deg,rgba(18,18,19,0) 0%,#121213 100%);
+}
+
+.content-block .media-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    padding: 2rem 1.5rem;
+}
+
+.content-block .grad-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-block .caption-content {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.axil-post-title{
+    font-size: 1.8rem;
+}
+
+.content-block .media-caption .axil-post-title {
+    font-size: 20px;
+    line-height: 1.4rem;
+    color: #fff;
+    margin-bottom: 0;
+    /* overflow: hidden; */
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3; */
+    -webkit-box-orient: vertical;
+    font-weight: 700;
+}
+
+.content-block:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.content-block .media-caption h3 a {
+    color: #fff;
+}
+
+.hover-line a {
+    position: relative;
+    display: inline;
+    background: -webkit-gradient(linear,left top,right top,from(currentColor),to(currentColor));
+    background: -webkit-linear-gradient(left,currentColor 0%,currentColor 100%);
+    background: -o-linear-gradient(left,currentColor 0%,currentColor 100%);
+    background: linear-gradient(to right,currentColor 0%,currentColor 100%);
+    background-size: 0px 2px;
+    background-position: 0 95%;
+    -webkit-transition: background-size .25s cubic-bezier(.785,.135,.15,.86) 0s;
+    -o-transition: background-size .25s cubic-bezier(.785,.135,.15,.86) 0s;
+    transition: background-size .25s cubic-bezier(.785,.135,.15,.86) 0s;
+    padding: .1% 0;
+    background-repeat: no-repeat;
+    color: inherit;
+}
