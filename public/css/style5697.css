@@ -9098,12 +9098,12 @@ section.bt_bb_negative_margin_extralarge {
     font-weight: 100;
     }
 .bt_bb_service .bt_bb_service_content .bt_bb_service_content_text {
-    font-size: .9em;
+    font-size: 1.2em;
     font-family: "Work Sans",Arial,Helvetica,sans-serif;
-    line-height: 1.3;
-    font-weight: 400;
+    line-height: 1;
+    font-weight: 300;
     opacity: .8;
-    }
+}
 
 /* Icons */
 .bt_bb_icon {

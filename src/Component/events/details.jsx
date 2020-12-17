@@ -126,7 +126,7 @@ export default class eventDetails extends Component {
                                                 {event.isLoading &&
                                                     <React.Fragment>
                                                         <Skeleton height={450} width={1200} /><br/>
-                                                        <Skeleton height={20} width={100}/> 
+                                                        <Skeleton height={20} width={100}/> <br/>
                                                         <Skeleton height={20} width={600}/> <br/>
                                                         <Skeleton height={20} width={200}/> <br/>
                                                     </React.Fragment>
