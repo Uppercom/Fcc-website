@@ -70,7 +70,7 @@ export default class menu extends Component {
                             </div>
                         </div>
 
-                        <li className="b__nudge--left-medium">
+                        {/* <li className="b__nudge--left-medium">
                             <a className="je-cherche" href="javascript:void(0)">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ export default class menu extends Component {
                                 ></path>
                             </svg>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                     <div className="l__row">
                         <div className="font-roboto b__nudge--right"></div>
