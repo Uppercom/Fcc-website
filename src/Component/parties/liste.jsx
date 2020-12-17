@@ -88,7 +88,7 @@ export default class partiesListe extends Component {
                                                                          parties.datas.map((item, key) => 
                                                                             <li className="card card--1 card--1--article l__col--bottom">
                                                                                 <div className="cs card--small ">
-                                                                                    <Link to={"s-engager/parties-politiques/" + item._id} className="background-container">
+                                                                                    <Link to={"/s-engager/parties-politiques/" + item._id} className="background-container">
                                                                                         <div style={{backgroundImage: `url(${item.logo})`, backgroundColor: 'rgb(0, 0, 0)', }} className="background card__background progressive-background">
 
                                                                                         </div>
