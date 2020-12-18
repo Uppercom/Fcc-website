@@ -40,7 +40,7 @@ function App() {
         <Route path="/plateforme/elus-locaux" component={Elus} />
         <Route path="/plateforme/senateurs" component={Senateurs} />
         <Route path="/actualites/liste" component={newsListe} />
-        <Route path="/actualites/:id/:name" component={newsCategory} />
+        <Route path="/actualites/category/:id" component={newsCategory} />
         <Route path="/actualites/:id" component={newsDetails} />
         <Route path="/s-engager/evenements/:id/inscription" component={eventInscription} />
         <Route path="/s-engager/evenements/:id" component={eventDetails} />
