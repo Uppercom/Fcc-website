@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './menu.css'
 import Logo from '../../Images/9.png'
+import LogoMobile from '../../Images/3.png'
 import chevronDown from '../../Images/chevron-down-light-black.svg'
 import { Link } from 'react-router-dom'
 
@@ -104,10 +105,12 @@ export default class menu extends Component {
                 <nav className="gtm__navigation__mobile l__wrapper l__hide--on-desktop space--20-0">
                     <ul className="list__links list__links--row list__links--nav l__row--h-stretch">
                         <li>
-                            <a href="/" className="link--no-decor text--logo">FCC!</a>
+                            <Link to="/" className="link--no-decor text--logo">
+                                <img width="80px" src={LogoMobile} alt="" srcset=""/>
+                            </Link>
                         </li>
                         <li>
-                            <a class="btn btn--red b__nudge--right-extra-large" href="/don">Donner</a>
+                            <Link class="btn btn--red b__nudge--right-extra-large" to="/don">Donner</Link>
                         </li>
                     </ul>
                     <div className="nav-mobile">
@@ -120,9 +123,7 @@ export default class menu extends Component {
                                     <div class="em-nav__menu em-nav__menu--mobile">
                                         <div class="b__nudge--bottom">
                                             <ul class="items">
-                                                <li><a href="/connexion">Connexion</a></li>
-                                                <li><a href="/adhesion">Adhérer</a></li>
-                                                <li><a href="https://aide.en-marche.fr" rel="noopener noreferrer" target="_blank">Aide</a></li>
+                                                <li><Link to="/adhesion">Adhérer</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -135,44 +136,24 @@ export default class menu extends Component {
                                         <div class="b__nudge--bottom">
                                             <span class="head">La plateforme</span>
                                             <ul class="items">
-                                                <li><a href="/le-mouvement">Qui sommes-nous ?</a></li>
-                                                <li><a href="/le-mouvement/notre-organisation">Notre organisation</a></li>
-                                                <li><a href="/le-mouvement/fonctionnement">Notre fonctionnement</a></li>
-                                                <li><a href="#">Nos députés</a></li>
-                                                <li><a href="#">Nos sénateurs</a></li>
-                                                <li><a href="#">Nos élus locaux</a></li>
+                                                <li><Link to="/plateforme/a-propos">Qui sommes-nous ?</Link></li>
+                                                <li><Link to="/plateforme/vision">Notre vision </Link></li>
+                                                <li><Link to="/plateforme/organisation">Notre organisation</Link></li>
+                                                <li><Link to="/plateforme/deputes">Nos députés</Link></li>
+                                                <li><Link to="/plateforme/senateurs">Nos sénateurs</Link></li>
+                                                <li><Link to="/plateforme/elus-locaux">Nos élus locaux</Link></li>
                                             </ul>
                                         </div>
                                         <div class="b__nudge--bottom">
-                                            <span class="head">Actualités</span>
-                                            <ul class="items">
-                                                <li><a href="#">Nos activités</a></li>
-                                                <li><a href="#">InfoCovid</a></li>
-                                                <li><a href="#">Toutes nos actualités</a></li>
-                                            </ul>
+                                            <Link to="/actualites/liste"> 
+                                                <span class="head">Actualités</span>
+                                            </Link>
+                                            
                                         </div>
                                         <div class="b__nudge--bottom">
-                                            <span class="head">Élections</span>
-                                            <ul class="items">
-                                                <li><a href="/municipales">Élections 2023</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="b__nudge--bottom">
-                                            <span class="head">S'engager</span>
-                                            <ul class="items">
-                                                <li><a href="#">Événements</a></li>
-                                                <li><a href="#">Comités</a></li>
-                                                <li><a href="#">Partis politques</a></li>
-                                                <li><a href="#">Projets citoyens</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="b__nudge--bottom">
-                                            <span class="head">Nos idées</span>
-                                            <ul class="items">
-                                                <li><a href="#">Notre projet</a></li>
-                                                <li><a href="#">Nos résultats concrets</a></li>
-                                                <li><a href="#">Nos publications</a></li>
-                                            </ul>
+                                            <Link to="/s-engager/evenements"> 
+                                                <span class="head">Évenements</span>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
