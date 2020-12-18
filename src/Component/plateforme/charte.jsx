@@ -14,7 +14,7 @@ export default class charte extends Component {
                     <div className="btContentHolder">
                         <div className="btContent">
                             <div className="bt_bb_wrapper">
-                                <section style={{backgroundImage: `url(${Banner})`, backgroundPosition: '50% 0px'}} className="bt_bb_section bt_bb_top_spacing_medium bt_bb_bottom_spacing_medium bt_bb_color_scheme_1 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
+                                <section style={{backgroundImage: `url(https://24hcongo.net/wp-content/uploads/2020/10/mwilanya_fcc_20_021451_jpg_640_350_1.jpeg)`, backgroundPosition: '50% 0px'}} className="bt_bb_section bt_bb_top_spacing_medium bt_bb_bottom_spacing_medium bt_bb_color_scheme_1 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
                                     <div className="bt_bb_port">
                                         <div className="bt_bb_cell">
                                             <div className="bt_bb_cell_inner">

@@ -7277,7 +7277,7 @@ html[data-useragent*="Edge"] .bt_bb_section.bt_bb_background_image {
 .bt_bb_font_weight_normal.bt_bb_headline h4,
 .bt_bb_font_weight_normal.bt_bb_headline h5,
 .bt_bb_font_weight_normal.bt_bb_headline h6 {
-    font-weight: normal;
+    font-weight: 600;
     }
 .bt_bb_font_weight_bold.bt_bb_headline h1,
 .bt_bb_font_weight_bold.bt_bb_headline h2,

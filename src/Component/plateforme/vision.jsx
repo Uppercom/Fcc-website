@@ -14,7 +14,7 @@ export default class vision extends Component {
                     <div className="btContentHolder">
                         <div className="btContent">
                             <div className="bt_bb_wrapper">
-                                <section style={{backgroundImage: `url(${Banner})`, backgroundPosition: '50% 0px'}} className="bt_bb_section bt_bb_top_spacing_medium bt_bb_bottom_spacing_medium bt_bb_color_scheme_1 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
+                                <section style={{backgroundImage: `url(https://24hcongo.net/wp-content/uploads/2020/10/mwilanya_fcc_20_021451_jpg_640_350_1.jpeg`, backgroundPosition: '50% 0px'}} className="bt_bb_section bt_bb_top_spacing_medium bt_bb_bottom_spacing_medium bt_bb_color_scheme_1 bt_bb_layout_boxed_1200 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
                                     <div className="bt_bb_port">
                                         <div className="bt_bb_cell">
                                             <div className="bt_bb_cell_inner">
@@ -111,7 +111,7 @@ export default class vision extends Component {
                                                                         <div className="bt_bb_grid_item bt_bb_tile_format_21 masonry-brick" data-hw="0.66666666666667" data-src={Banner} data-src-full={Banner} style={{height: '417px', position: 'absolute', left: '0%', top: '0px'}}>
                                                                             <div data-hw="0.66666666666667" className="bt_bb_grid_item_inner">
                                                                                 <div className="bt_bb_grid_item_inner_image">
-                                                                                    <img src={Banner} alt="" srcset=""/>
+                                                                                    <img src="https://www.mediacongo.net/dpics/filesmanager/actualite/2019_actu/11-nov/25-30/fcc-retraite-a-kisantu-kongo-central.jpg" alt="" srcset=""/>
                                                                                     <button className="play_button">
                                                                                         <svg
                                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,7 @@ export default class vision extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                </section>
+                                </section> <br/><br/>
 
                                 <section className="bt_bb_section bt_bb_top_spacing_large bt_bb_bottom_spacing_small bt_bb_color_scheme_1 bt_bb_layout_boxed_700 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
                                     <div className="bt_bb_port">

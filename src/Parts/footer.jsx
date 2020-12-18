@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Logo from '../Images/4.png'
-
+import { Link } from 'react-router-dom'
 
 export default class footer extends Component {
     render() {
@@ -108,7 +108,7 @@ export default class footer extends Component {
                                                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
                                                                 <circle cx="12" cy="10" r="3"></circle>
                                                             </svg>
-                                                            <span>60 East 65th Street, New York City, NY 10065</span>
+                                                            <span>Immeuble victor avenue de la justice, Gombe, Kinshasa</span>
                                                         </span>
                                                     </div>
 
@@ -127,24 +127,24 @@ export default class footer extends Component {
                                                         <div class="menu-popular-links-container">
                                                             <ul id="menu-popular-links" class="menu">
                                                                 <li id="menu-item-2393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2321 current_page_item menu-item-2393">
-                                                                    <a style={{borderBottom: 'none'}} href="#" aria-current="page">A propos du FCC</a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/plateforme/a-propos" aria-current="page">Qui sommes-nous ?</Link>
                                                                 </li>
                                                                 <li id="menu-item-2391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2391">
-                                                                    <a style={{borderBottom: 'none'}} href="#">Notre organisation </a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/plateforme/vision">Notre vision </Link>
                                                                 </li>
                                                                 <li id="menu-item-2395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2395">
-                                                                    <a style={{borderBottom: 'none'}} href="#">Notre fonctionnement</a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/plateforme/organisation">Notre organisation</Link>
                                                                 </li>
                                                                 <li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394">
-                                                                <a style={{borderBottom: 'none'}} href="#">Nos députés</a>
-                                                                </li>
-
-                                                                <li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394">
-                                                                <a style={{borderBottom: 'none'}} href="#">Nos senateurs</a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/plateforme/deputes">Nos députés</Link>
                                                                 </li>
 
                                                                 <li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394">
-                                                                <a style={{borderBottom: 'none'}} href="#">Nos élus locaux</a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/plateforme/senateurs">Nos sénateurs</Link>
+                                                                </li>
+
+                                                                <li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394">
+                                                                    <Link style={{borderBottom: 'none'}} to="/plateforme/elus-locaux">Nos élus locaux</Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -162,16 +162,13 @@ export default class footer extends Component {
                                                         <div class="menu-popular-links-container">
                                                             <ul id="menu-popular-links" class="menu">
                                                                 <li id="menu-item-2393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2321 current_page_item menu-item-2393">
-                                                                    <a style={{borderBottom: 'none'}} href="#" aria-current="page">Évenements</a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/s-engager/evenements">Évenements</Link>
                                                                 </li>
                                                                 <li id="menu-item-2391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2391">
-                                                                    <a style={{borderBottom: 'none'}} href="#">Parties politiques </a>
-                                                                </li>
-                                                                <li id="menu-item-2395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2395">
-                                                                    <a style={{borderBottom: 'none'}} href="#">Projet citoyens</a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/s-engager/parties-politiques">Parties politiques</Link>
                                                                 </li>
                                                                 <li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394">
-                                                                    <a style={{borderBottom: 'none'}} href="#">Actualités</a>
+                                                                    <Link style={{borderBottom: 'none'}} to="/actualites/liste">Actualités</Link>
                                                                 </li>
                                                             </ul>
                                                         </div>

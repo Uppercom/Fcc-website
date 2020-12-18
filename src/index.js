@@ -3,14 +3,16 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CategoryProvider } from './Helpers/context.js'
+import { CategoryProvider, CountriesProvider } from './Helpers/context.js'
 
 ReactDOM.render(
   <React.StrictMode>
     <CategoryProvider>
-      <Router>
-        <App />
-      </Router>
+      <CountriesProvider>
+        <Router>
+          <App />
+        </Router>
+      </CountriesProvider>
     </CategoryProvider>
   </React.StrictMode>,
   document.getElementById('root')

@@ -10246,8 +10246,8 @@ section.bt_bb_negative_margin_extralarge {
 .bt_bb_custom_menu div ul > li {
     list-style: none;
     margin-left: 0;
-    padding: .8em 0;
-    border-bottom: 1px solid rgba(255,255,255,.2);
+    padding: .3em 0;
+    /* border-bottom: 1px solid rgba(255,255,255,.2); */
     }
 .bt_bb_custom_menu div ul > li:first-child {
     padding-top: 0;
