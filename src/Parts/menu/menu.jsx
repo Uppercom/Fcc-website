@@ -155,6 +155,12 @@ export default class menu extends Component {
                                                 <span class="head">Évenements</span>
                                             </Link>
                                         </div>
+
+                                        <div class="b__nudge--bottom">
+                                            <Link to="/s-engager/parties-politiques"> 
+                                                <span class="head">Parties politiques</span>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
