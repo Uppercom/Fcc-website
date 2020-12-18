@@ -38,7 +38,7 @@ export default class don extends Component {
                             <div className="donation-hero__overlay"></div>
                             <div className="donation-hero__container l__wrapper">
                                 <div className="donation-hero__content">
-                                    <h1 class="text--larger">Un don pour <br /> transformer la France !</h1>
+                                    <h1 class="text--larger">Un don pour <br /> transformer le Congo !</h1>
                                     <p class="text--medium-small">Chaque don, quel que soit le montant, nous permet d’engager une action concrète pour réussir ensemble la transformation du pays.</p>
                                     <div className="donation-reassurance dark">
                                         <div className="donation-reassurance__item">
