@@ -167,7 +167,7 @@ export default class about extends Component {
                                 <section className="bt_bb_section bt_bb_top_spacing_small bt_bb_bottom_spacing_small bt_bb_color_scheme_1 bt_bb_layout_boxed_700 bt_bb_vertical_align_top bt_bb_background_image bt_bb_parallax">
                                     <div className="bt_bb_port">
                                         <div className="bt_bb_cell">
-                                            <h2 style={{fontWeight: '900', fontSize: '35px'}} class="b__nudge--bottom text--center text--normal">Naissance du mouvement</h2>
+                                            <h2 style={{fontWeight: '900', fontSize: '35px'}} class="b__nudge--bottom text--center text--normal">Notre vision</h2>
                                             <div class="text--center">
                                                 <p>Tout mouvement politique tire sa raison d’être du fait de chercher à susciter une certaine forme de changement sociétal ou politique identifiable (ou à maintenir le statu quo). Le regroupement FCC et son organisation sont donc les instruments d’un objectif sociétal ou politique plus large, et pas une fin en soi. La plupart des partis politiques qui la composent disposent d’une déclaration propre de principes détaillant les orientations et valeurs idéologiques (démocratie, solidarité, liberté individuelle, pérennité écologique, non-discrimination et égalité, etc.).</p>
                                             </div>

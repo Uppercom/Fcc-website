@@ -71,6 +71,14 @@ export default class menu extends Component {
                             </div>
                         </div>
 
+                        <div className="l__row">
+                            <div className="nav-dropdown">
+                                <p className="mb-0">
+                                    <Link to="/grands-moment">Grands moments</Link>
+                                </p>
+                            </div>
+                        </div>
+
                         {/* <li className="b__nudge--left-medium">
                             <a className="je-cherche" href="javascript:void(0)">
                             <svg
