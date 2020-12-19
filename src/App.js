@@ -26,6 +26,7 @@ import informations from '../src/Component/don/informations.jsx'
 import paiement from '../src/Component/don/paiement.jsx'
 import Home from '../src/Component/plateforme/home.jsx'
 import Moments from '../src/Component/engagement/moment.jsx'
+import MomentDetails from '../src/Component/engagement/details.jsx'
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/s-engager/parties-politiques/:id/membres" component={membresPartie} />
         <Route path="/s-engager/parties-politiques/:id" component={detailsParties} />
         <Route path="/s-engager/parties-politiques" component={partiesListe} />
+        <Route path="/grands-moment/:id" component={MomentDetails} />
         <Route path="/grands-moment" component={Moments} />
         <Route path="/adhesion" component={formulaire} />
         <Route path="/don/informations" component={informations} />

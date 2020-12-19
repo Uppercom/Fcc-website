@@ -66,7 +66,7 @@ export default class menu extends Component {
                         <div className="l__row">
                             <div className="nav-dropdown">
                                 <p className="mb-0">
-                                    <Link to="/s-engager/parties-politiques">Parties politiques</Link>
+                                    <Link to="/s-engager/parties-politiques">Partis politiques</Link>
                                 </p>
                             </div>
                         </div>
