@@ -97,10 +97,10 @@ export default class home extends Component {
                                     </a>
                                 </div>
                                 <div class="action action__home blue">
-                                    <p class="white">Je rejoins un comité local</p>
-                                    <a href="https://en-marche.fr/comites" class="white" target="_blank" rel="noreferrer noopener">
-                                        J'y vais !
-                                    </a>
+                                    <p class="white">Je rejoins le FCC</p>
+                                    <Link to="/adhesion" class="white" target="_blank" rel="noreferrer noopener">
+                                        rejoindre
+                                    </Link>
                                 </div>
                             </article>
                         </div>
