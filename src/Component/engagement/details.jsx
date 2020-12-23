@@ -90,6 +90,78 @@ export default class details extends Component {
                                 </div>
                             </div>
                         </div>
+
+                        <div className="video-single flex">
+                            <div className="video-title">
+                            Marche du fcc en soutien aux institutions
+                            </div>
+                            <div className="video-content">
+                                <div style={{backgroundImage: 'url(https://www.mediacongo.net/dpics/filesmanager/actualite/2020_actu/07-juillet/27-31/fcc_marche_20_2584.jpg)'}} className="video-cover">
+                                    <div className="video-button-play">
+                                        <svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style={{width: "3em", color: "#fff"}} x="0" y="0" viewBox="0 0 200 200">
+                                            <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div className="video-timer">
+                                    3:32
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="video-single flex">
+                            <div className="video-title">
+                            Anniversaire de son Excellence Joseph Kabila le 4 juin
+                            </div>
+                            <div className="video-content">
+                                <div style={{backgroundImage: 'url(https://pbs.twimg.com/media/EZqnlUdXsAAp-Lu.jpg)'}} className="video-cover">
+                                    <div className="video-button-play">
+                                        <svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style={{width: "3em", color: "#fff"}} x="0" y="0" viewBox="0 0 200 200">
+                                            <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div className="video-timer">
+                                    3:32
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="video-single flex">
+                            <div className="video-title">
+                            A la nouvelle de la mort de Mgr Mulumba, oncle paternel...
+                            </div>
+                            <div className="video-content">
+                                <div style={{backgroundImage: 'url(https://www.mediacongo.net/cache/monseigneur-gerard-mulumba-commemoration-mort-frederic-kibassa-maliba_jpg_640_350_1.jpeg)'}} className="video-cover">
+                                    <div className="video-button-play">
+                                        <svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style={{width: "3em", color: "#fff"}} x="0" y="0" viewBox="0 0 200 200">
+                                            <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div className="video-timer">
+                                    4:51
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="video-single flex">
+                            <div className="video-title">
+                            Son excellence Joseph Kabila au sénat le 15 sept 2020.
+                            </div>
+                            <div className="video-content">
+                                <div style={{backgroundImage: 'url(https://www.geopolismagazine.net/wp-content/uploads/2020/09/IMG-20200915-WA0072.jpg)'}} className="video-cover">
+                                    <div className="video-button-play">
+                                        <svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style={{width: "3em", color: "#fff"}} x="0" y="0" viewBox="0 0 200 200">
+                                            <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div className="video-timer">
+                                    6:51
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

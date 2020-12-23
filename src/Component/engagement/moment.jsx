@@ -53,34 +53,24 @@ export default class Moments extends Component {
                                                 <div className="time-indication">10:20</div>
                                             </Link>
 
-                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://en-marche.fr/assets/images/urne-vote?cache=56c472e1dec255e3cc0d&fm=pjpg&s=8ce79002f8439f44d35f544b95b77a9a)'}}>
-                                                <h2>Veille spéciale : COVID-19</h2>
-                                                <div className="time-indication">11:20</div>
+                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://www.mediacongo.net/dpics/filesmanager/actualite/2020_actu/07-juillet/27-31/fcc_marche_20_2584.jpg)'}}>
+                                                <h2>Marche du fcc en soutien aux institutions</h2>
+                                                <div className="time-indication">2:20</div>
                                             </Link>
-                                        </div>
-                                    </article>
-
-                                    <article className="l__wrapper b__nudge--bottom-huge">
-                                        <h3>Discours</h3> <br/>
-                                        <div className="static-page-overview">
-                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://en-marche.fr/assets/images/urne-vote?cache=56c472e1dec255e3cc0d&fm=pjpg&s=8ce79002f8439f44d35f544b95b77a9a)'}}>
-                                                <h2>La Veille des idées</h2>
-                                                <div className="time-indication">11:20</div>
+s
+                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://pbs.twimg.com/media/EZqnlUdXsAAp-Lu.jpg)'}}>
+                                                <h2>Anniversaire de son Excellence Joseph Kabila le 4 juin</h2>
+                                                <div className="time-indication">5:20</div>
                                             </Link>
 
-                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://en-marche.fr/assets/images/urne-vote?cache=56c472e1dec255e3cc0d&fm=pjpg&s=8ce79002f8439f44d35f544b95b77a9a)'}}>
-                                                <h2>Veille spéciale : COVID-19</h2>
-                                                <div className="time-indication">11:20</div>
+                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://www.mediacongo.net/cache/monseigneur-gerard-mulumba-commemoration-mort-frederic-kibassa-maliba_jpg_640_350_1.jpeg)'}}>
+                                                <h2>A la nouvelle de la mort de Mgr Mulumba, oncle paternel...</h2>
+                                                <div className="time-indication">10:30</div>
                                             </Link>
 
-                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://en-marche.fr/assets/images/urne-vote?cache=56c472e1dec255e3cc0d&fm=pjpg&s=8ce79002f8439f44d35f544b95b77a9a)'}}>
-                                                <h2>Veille spéciale : COVID-19</h2>
-                                                <div className="time-indication">11:20</div>
-                                            </Link>
-
-                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://en-marche.fr/assets/images/urne-vote?cache=56c472e1dec255e3cc0d&fm=pjpg&s=8ce79002f8439f44d35f544b95b77a9a)'}}>
-                                                <h2>Veille spéciale : COVID-19</h2>
-                                                <div className="time-indication">11:20</div>
+                                            <Link className="static-page-overview__item" to="/grands-moment/1" style={{backgroundImage: 'url(https://www.geopolismagazine.net/wp-content/uploads/2020/09/IMG-20200915-WA0072.jpg)'}}>
+                                                <h2>Son excellence Joseph Kabila au sénat le 15 sept 2020</h2>
+                                                <div className="time-indication">5:11</div>
                                             </Link>
                                         </div>
                                     </article>

@@ -7,6 +7,7 @@ import Menu from '../../Parts/menu/menu.jsx'
 import Banner from '../../Images/news.jpg' 
 import Footer from '../../Parts/footer.jsx'
 import { Link } from 'react-router-dom'
+import Empty from '../../Parts/empty.jsx'
 import { CategoryConsumer } from '../../Helpers/context'
 
 
@@ -25,10 +26,10 @@ export default class newsCategory extends Component {
         }
     }
 
-    getArticles() {
+    getArticles(id) {
         this.setState({ articles : {isLoading : true}})
         axios
-            .get(`${API}/api/admin/news/5`)
+            .get(`${API}/api/news/forCategories/${id}`)
             .then(
                 (res) => {
                     if (res.data.state) {
@@ -57,7 +58,11 @@ export default class newsCategory extends Component {
     }
 
     componentDidMount() {
-        this.getArticles()
+        this.getArticles(this.props.match.params.id)
+    }
+
+    handleArticle(id){
+        this.getArticles(id);
     }
 
     render() {
@@ -110,8 +115,8 @@ export default class newsCategory extends Component {
                                                                                         </Link>
                                                                                         {value.categories.length > 0 && 
                                                                                          value.categories.map((item, key) =>
-                                                                                            <Link to={"/actualites/category/"+ item._id}>
-                                                                                                <span style={{fontWeight: '400'}} class={this.state.categoryId == item._id ? "bt_bb_post_grid_filter_item active" : "bt_bb_post_grid_filter_item"} data-category="achievement">
+                                                                                            <Link onClick={() => { this.handleArticle(item._id) }} to={"/actualites/category/"+ item._id}>
+                                                                                                <span style={{fontWeight: '400'}} class={this.props.match.params.id == item._id ? "bt_bb_post_grid_filter_item active" : "bt_bb_post_grid_filter_item"} data-category="achievement">
                                                                                                     {item.name}
                                                                                                 </span>
                                                                                             </Link>
@@ -167,6 +172,8 @@ export default class newsCategory extends Component {
                                                                                                 </li>
                                                                                             </React.Fragment>
                                                                                         }
+
+                                                                                        { articles.no_datas && <Empty message="Aucun article n'est disponible pour le moment" /> }
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
