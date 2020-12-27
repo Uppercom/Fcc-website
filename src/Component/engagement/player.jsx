@@ -2,13 +2,17 @@ import React, { Component } from 'react'
 import VideoPlayer from 'react-video-js-player';
 
 export default class player extends Component {
-    player = {}
-    state = {
-        video: {
-            src: "https://test-corona-sf.s3.eu-west-3.amazonaws.com/FCC__SIGNATURE_DE_LA_CHARTE_PAR_LES_GOUVERNEURS_DE_PROVINCES(360p).mp4",
-            poster: "https://www.mediacongo.net/dpics/filesmanager/actualite/2018_actu/08-aout/01-05/fcc-adhesion-gouv-et-autorites-religieuses.jpg"
+    constructor(props){
+        super(props)
+        this.state = {
+            video: {
+                src: this.props.src,
+                poster: this.props.poster
+            }
         }
     }
+    player = {}
+    
 
     onPlayerReady(player){
         console.log("Player is ready: ", player);
