@@ -49,9 +49,24 @@ class CountriesProvider extends Component {
             .get(`${API}/api/admin/countries`)
             .then(
                 (res) => {
-                    this.setState({
-                        countries: res.data.datas
-                    })
+                    if (res.data.state) {
+                        var out = 0
+                        var tab = []
+                        res.data.datas.map((item, key) => {
+                            out++
+                            tab.push({
+                                value: item._id,
+                                label: item.name
+                            })
+
+                            if (res.data.datas.length == out) {
+                                this.setState({
+                                    countries: tab
+                                })
+                            }
+                        })
+                    }
+                    
                 }
             )
     }
@@ -63,7 +78,7 @@ class CountriesProvider extends Component {
     render() {
         return (
             <countriesContext.Provider
-                item={{
+                value={{
                     ...this.state
                 }}>
                     {this.props.children}

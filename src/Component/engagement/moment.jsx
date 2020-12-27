@@ -88,7 +88,7 @@ export default class Moments extends Component {
                                     </div>
                                 </section>
 
-                                <section className="content">
+                                <section className="content-2">
                                     <article className="l__wrapper b__nudge--bottom-huge">
                                         <h3>Grands événements</h3> <br/>
                                         <div className="static-page-overview">

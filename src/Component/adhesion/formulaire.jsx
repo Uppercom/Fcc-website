@@ -9,7 +9,7 @@ import Footer from '../../Parts/footer.jsx'
 import Logo from '../../Images/7.png'
 import { Link } from 'react-router-dom'
 import { CountrieConsumer, CategoryConsumer } from '../../Helpers/context'
-
+import Select from 'react-select'
 
 export default class formulaire extends Component {
     render() {
@@ -68,11 +68,7 @@ export default class formulaire extends Component {
                                                                             <input type="email" id="adherent_registration_emailAddress_first" name="adherent_registration[emailAddress][first]" required="required" placeholder="Organisation" class="form form__field form-join" />
                                                                         </div>
                                                                         <div className="l__row l__row--h-stretch register__form--full">
-                                                                            <select className="form--full form form__field" name="" id="">
-                                                                                <option value="" selected="selected">Nationalité</option>
-                                                                                <option value="FR">France</option>
-                                                                                <option value="AF">Afghanistan</option>
-                                                                            </select>
+                                                                            <Select placeholder="Pays de residence" style={{width: '100%'}} options={ item.countries } />
                                                                         </div>
 
                                                                         <div className="l__row l__row--top l__row--h-stretch l__mobile--col">

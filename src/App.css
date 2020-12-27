@@ -929,6 +929,10 @@ button.btn {
   transition: transform .2s ease,-webkit-transform .2s ease;
 }
 
+.css-2b097c-container{
+  width: 100%;
+}
+
 @media (min-width: 1440px){
   .join__desc {
       height: auto;
